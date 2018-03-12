@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `Doctors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Doctors` (
-  `username` int(10) DEFAULT NULL,
+  `username` varchar(10) NOT NULL,
   `password` varchar(20) DEFAULT NULL,
-  `license` int(20) DEFAULT NULL,
+  `license` int(20) NOT NULL,
   `firstName` varchar(50) DEFAULT NULL,
   `lastName` varchar(50) DEFAULT NULL,
   `name` varchar(60) DEFAULT NULL,
@@ -35,7 +35,9 @@ CREATE TABLE `Doctors` (
   `review` varchar(500) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `phone` int(15) DEFAULT NULL,
-  `location` varchar(20) DEFAULT NULL
+  `location` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`username`),
+  UNIQUE KEY `license` (`license`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -45,7 +47,7 @@ CREATE TABLE `Doctors` (
 
 LOCK TABLES `Doctors` WRITE;
 /*!40000 ALTER TABLE `Doctors` DISABLE KEYS */;
-INSERT INTO `Doctors` VALUES (100001,'test',10,'Gregory','House','Gregory House','M','Bullshit',0,'Worst Doctor Ever.\" Really.\" Really.Fuck you, asshole.','ghouse@deepshit.com',2337002,'Jail');
+INSERT INTO `Doctors` VALUES ('100001','test',10,'Gregory','House','Gregory House','M','Bullshit',0,'Worst Doctor Ever.\" Really.\" Really.Fuck you, asshole.','ghouse@deepshit.com',2337002,'Jail');
 /*!40000 ALTER TABLE `Doctors` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -57,7 +59,7 @@ DROP TABLE IF EXISTS `patientRecords`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `patientRecords` (
-  `username` int(10) NOT NULL,
+  `username` varchar(10) NOT NULL,
   `password` varchar(20) DEFAULT NULL,
   `firstName` varchar(50) DEFAULT NULL,
   `lastName` varchar(50) DEFAULT NULL,
@@ -68,7 +70,7 @@ CREATE TABLE `patientRecords` (
   `sex` varchar(1) DEFAULT NULL,
   `diagnosis` varchar(60) DEFAULT NULL,
   `drNote` varchar(100) DEFAULT NULL,
-  `doctor` int(10) DEFAULT NULL,
+  `doctor` int(20) DEFAULT NULL,
   `prescription` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -80,7 +82,7 @@ CREATE TABLE `patientRecords` (
 
 LOCK TABLES `patientRecords` WRITE;
 /*!40000 ALTER TABLE `patientRecords` DISABLE KEYS */;
-INSERT INTO `patientRecords` VALUES (1,'test','Robert','Baratheon','Robert Baratheon',36,'6\'6','300','M','Too fat for his armor','Needs to drink lessFuck you, asshole.Fuck you, asshole.',100000,'exercise');
+INSERT INTO `patientRecords` VALUES ('1','test','Robert','Baratheon','Robert Baratheon',36,'6\'6','300','M','Too fat for his armor','Needs to drink lessFuck you, asshole.Fuck you, asshole.',10,'exercise'),('2','','','','Ned Stark',2,'','','','','',10,'');
 /*!40000 ALTER TABLE `patientRecords` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -145,4 +147,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-12 11:47:47
+-- Dump completed on 2018-03-12 14:46:44
