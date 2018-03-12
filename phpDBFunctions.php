@@ -19,8 +19,8 @@
 			$printResult[]=$row;
 		}
 
-		print_r($printResult);
-		//return $printResult;
+		//print_r($printResult);
+		return $printResult;
 	}
 	
 	function patientList($connect, $user) //NEEDS UPDATE READ BELOW
@@ -44,27 +44,68 @@
 		//print_r($patientArray);
 		//$return $patientArray;
 	}
+	
+	function uAuth($user, $pass, $connection, $accType)
+	{
+	
+		switch $acctype
+		{
+			case "patient"
+				$q="select name,height,weight, from patientRecords where username='$user' and password='$pass';";
+				break;
+		
+			case "doctor"
+				$q="select name,license,reviews from Doctors where username='$user' and password ='$pass';";
+				break;
+		}
 
+	$query=mysqli_query($connection, $q);
+	
+	if (!$query)
+	{
+		echo "credential failure." . $query . mysqli_error($connection);
+	}
+	
+	$resA= array();
+	
+	while ($row=mysqli_fetch_row($query)
+	{
+		$resA[]=$row;
+	}
+	
+	return $resA[];
+	}
+	
 
 	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $rating, $review, $email,$phone, $location, $con)
 	{
-		$name= "".$firstName.$lastName;
+		$name= $firstName . " " . $lastName;
 		$query= "INSERT INTO Doctors (username, password, license, firstName, lastName, name, gender, specialization, rating, review, email, phone, location) VALUES ($user, '$pass', $license, '$firstName','$lastName', '$name', '$gender', '$special', $rating, '$review', '$email', $phone, '$location');";
 		
-		if( mysqli_query($con, $query) )
-		{
-			echo "connection success";
-		}
-		else 
+		$q=mysqli_query($con,$query);
+
+		if(!$q) 
 		{
 			echo "connection failure". $query . "<br>". mysqli_error($con);
 		}
 	}
 
-	function addReview($firstName, $lastName, $inputText,$con, $status) 
+	function addPatient($user, $pass, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $drNote, $doctor, $prescription, $con)
+	{
+		$name=$firstName . " " . $lastName;
+		$query= "INSERT INTO Doctors (username, password, firstName, lastName, name, age, height, weight, sex, diagnosis, drNote, doctor, prescription) VALUES ('$user', '$pass', '$firstName', '$lastName', '$name', $age, '$height', '$weight', '$sex', '$diagnosis', '$drNote', $doctor, '$prescription');";
+		$q=mysqli_query($con, $query);
+		
+		if( mysqli_query($con, $query)
+		{
+			echo "connection failure" . $query . "<br>" . mysqli_error($con);
+		}		
+	}
+
+	function addReview($firstName, $lastName, $inputText,$con, $accType) 
 	{
 
-		if($status=="patient")
+		if($accType=="patient")
 		{
 			//$query='select review from Doctors where name='$name';'
 			$query="UPDATE Doctors SET review= CONCAT(review, '$inputText') where firstName='$firstName' AND lastName='$lastName';";
@@ -77,7 +118,7 @@
 				echo "Error:" . $query . "<br>" . mysqli_error($con);
 			}
 		}
-		else if($status=="doctor")
+		else if($accType=="doctor")
 		{
 			$query="UPDATE patientRecords SET drNote= CONCAT(drNote, '$inputText') where firstName='$firstName' AND lastName='$lastName';";
 			if (mysqli_query($con, $query))
@@ -91,13 +132,13 @@
 		}
 	}	
 
-	function viewRecords($firstName, $lastName, $status, $user, $con) 
+	function viewRecords($firstName, $lastName, $accType, $user, $con) 
 	{
-		if ($status=="doctor")
+		if ($accType=="doctor")
 		{
 			$query="SELECT drNote from patientRecords where firstName='$firstName' and lastName='$lastName';";
 		}	
-		else if($status=="patient")
+		else if($accType=="patient")
 		{
 			$query="SELECT drNote FROM patientRecords WHERE username='$user';";
 		}	
@@ -114,7 +155,7 @@
 			//return $records;
 	}
 
-	/*function updateMe($user, $status,
+	/*function updateMe($user, $accType,
 	
 	*/
 	

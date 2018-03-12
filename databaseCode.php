@@ -13,7 +13,7 @@
 		$user=$response['username']; //=$Req[1]
 		$pass=$response['password'];
 		$rePass=$response['rePass'];
-		$status=$response['status'];
+		$accType=$response['status'];
 		$eMail=$response['email'];
 		$telNo=$response['telNo'];
 		$firstName=$response['fname'];
@@ -23,7 +23,7 @@
 		$address=$response['address'];
 		$sex=$response['sex'];
 
-
+		
 		//$echo "".$user;
 		
 
@@ -47,18 +47,22 @@
 		case "listDoctors" 
 			listDoctors($testCon);
 			break;
-		}
+		
 
 		case "patientList" //I think I also need to check status here but unsure on multiple checks with switch
 			patientList($testCon, $user); //this function is being rewritten
 			break;
 
-		case "addDoctor" //minor rewrite but not much
-			addDoctor($user, $pass, $license, $firstName, $lastName, $name, $gender, $specialization, $rating, "", $email, $phone, $location);
+		case "dRegister" //minor rewrite but not much	
+			addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $rating, "", $email, $phone, $location, $testCon);
 			break;
-	
-		case "addReview" //also minor rewrite needed. this function is for reviewing doctors OR adding notes to patients
-			addReview($firstName, $lastName, $inputText, $testCon, $status);
+
+		case "pRegister"
+			addPatient($user, $pass, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $drNote, $doctor, $prescription, $testCon);
+			break;
+			
+		case "wDocRev" //also minor rewrite needed. this function is for reviewing doctors OR adding notes to patients
+			addReview($firstName, $lastName, $inputText, $testCon, $accType);
 			break;
 
 		case "viewRecords" //don't think it needs a rewrite but will check
@@ -68,10 +72,11 @@
 		case "viewDoc"
 			viewDoc($firstName, $lastName, $testCon);
 			break;
+		}
 		/*
 		if($Function == "auth") 
 		{
-			$x = "select * from uAuth1 where user='$user' and pass='$pass' and status='$status'"; // this returns true if user/pass exist in db. otherwise false.
+			$x = "select * from uAuth1 where user='$user' and pass='$pass' and status='$accType'"; // this returns true if user/pass exist in db. otherwise false.
 			$result=mysqli_query($testCon, $x);
 			if($result )
 			{ //see previous comment. if statement with parameter of the mysqli query
