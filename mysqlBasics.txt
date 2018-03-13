@@ -1,0 +1,116 @@
+Hey Ben, here's a brief overview of mysql shit we're using. You probably know a bunch of this but I'll write that crap anyway just in case.
+
+1. Databases and tables
+	A database is a collection of tables. Tables have rows, representing entries, and columns, representing values we describe with column
+	names. Each row is a unique entity. Each column gives information about that entity. Here's an example of a table.
+
++--------+------+--------+
+| user   | pass | status |
++--------+------+--------+
+| tester | pass |      1 |
++--------+------+--------+
+
+	user, pass, and status are columns with datatypes assigned when you create the column. Generally when you're looking at things at the
+	database level, you use the term SHOW. Commands you type out with SQL/MySQL are generally referred to as statements.
+
+	example 1: SHOW tables;
+mysql> SHOW tables;
++-----------------+
+| Tables_in_it490 |
++-----------------+
+| Doctors         |
+| patientRecords  |
+| test            |
+| uAuth1          |
++-----------------+
+4 rows in set (0.00 sec)
+
+	example 2: SHOW COLUMNS FROM Doctors;
+mysql> SHOW COLUMNS FROM Doctors;
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| username       | varchar(10)  | NO   | PRI | NULL    |       |
+| password       | varchar(20)  | YES  |     | NULL    |       |
+| license        | int(20)      | NO   | UNI | NULL    |       |
+| firstName      | varchar(50)  | YES  |     | NULL    |       |
+| lastName       | varchar(50)  | YES  |     | NULL    |       |
+| name           | varchar(60)  | YES  |     | NULL    |       |
+| gender         | varchar(1)   | YES  |     | NULL    |       |
+| specialization | varchar(30)  | YES  |     | NULL    |       |
+| rating         | int(2)       | YES  |     | NULL    |       |
+| review         | varchar(500) | YES  |     | NULL    |       |
+| email          | varchar(50)  | YES  |     | NULL    |       |
+| phone          | int(15)      | YES  |     | NULL    |       |
+| location       | varchar(20)  | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+13 rows in set (0.00 sec)
+
+	In order for PHP to perform operations within a database, it first has to connect to a mysql server. This is done through the
+	mysqli_connect($serverAddress, $dbUsername, $dbPassword, $dbName) PHP function. Generally we assign this do a variable, like so:
+	$connect=mysqli_connect(blah);
+	And from there, we use $connect to tell other PHP functions where to send their requests or updates, etc.
+
+	However, PHP won't return connection errors natively; it'll just give a PHP error, not a MySQL error. 
+	To get that, we use $error=mysqli_connect_errno($connect) and then printf or echo this:
+	echo "Connection error:" . $error . mysqli_error($connect);
+	printf is different format.
+
+2. Statements
+
+	Skipping ahead a bit, statements are what we use to get shit, change shit, or create new shit in SQL. The general format is
+	<operation> <object> <director> <identifier> ;  Note that MySQL terms are generally in all caps and user created objects
+	are in normal case. The conventions might be fucked up a bit in my code.
+
+	Operation: What you want to do. example: if I need to return data from a table in a DB, I use SELECT. 
+	
+	Object: what the operation is acting on. For example, if I want the value of a height column, I use SELECT height .
+
+	Director: This directs where to perform the previous two steps. If I want the height of a patient, or SELECT height,
+	I have to go to patientRecords, the table with that column. example: SELECT height FROM patientRecords .
+	
+	Identifier: In that previous example, I would select EVERY height:
+
+mysql> select height from patientRecords;
++--------+
+| height |
++--------+
+| 6'6    |
+| 6'2    |
++--------+
+2 rows in set (0.00 sec)
+	
+	So what I need is to identify who I want to see the height of if I want a specific value. In this, we're going to use WHERE.
+	SELECT name,height FROM patientRecords WHERE name='Robert Baratheon'; I added name to show the relation.
+	Let's see what that gives us. Note that name is the column we're checking for the value 'Robert Baratheon'.
+
+mysql> SELECT name,height FROM patientRecords WHERE name='Robert Baratheon';
++------------------+--------+
+| name             | height |
++------------------+--------+
+| Robert Baratheon | 6'6    |
++------------------+--------+
+1 row in set (0.00 sec)
+	
+	Generally we refer to the above as "query". You'll see me define $q as the actual statement and the query function, 
+	mysqli_query($connect) as $query.
+
+	There's a special thing about SELECT statements that we're taking advantage of; if they fail, the value they return is a FALSE. 
+	So if we do SELECT whatever FROM patientRecords WHERE user='blah' and pass='blah'; and that user/pass doesn't exist, all
+	we need is an if(!$query) for error handling.
+
+	Here are the statements we're probably going to be using exclusively:
+
+	SELECT, for retrieving data.
+	INSERT INTO, for adding a new row to a table.
+	UPDATE, to edit an existing row. 
+
+	Here's a quick lowdown on syntax for them. 
+	
+	SELECT <column1,column2,etc> FROM <tableName> WHERE <columnvalue>='<whatever>' //this is optional// AND/OR <columnvalue>='etc';
+
+	INSERT INTO <table> (col1, col2, col3...lastCol) VALUES ('value1', 'value2', value3,...); //note that 's' means s is a VARCHAR/CHAR
+	and no ' ' means it's an INT or similar value.
+
+	UPDATE <table> SET <column>='newvalue' WHERE <column>='identifyingvalue'; 
+
