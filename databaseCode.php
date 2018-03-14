@@ -8,7 +8,10 @@
 	//	
 	function process_requests($response)
 	{	
+		//assign variables from forms to usable php variables
 		
+		//Ben, please double check these for me. Feel free to edit this as needed. 
+			
 		$Function = $response['function'];
 		$user=$response['username']; //=$Req[1]
 		$pass=$response['password'];
@@ -23,9 +26,11 @@
 		$address=$response['address'];
 		$sex=$response['sex'];
 
-		
+		$dbResults=array();
+
 		//$echo "".$user;
 		
+		//open a connection to the mysql server running on the same machine this php is running on
 
 		$testCon=mysqli_connect("$dbAddr", "$dbUser","$dbPass","$db"); //create a connection to the database. in the real version
 		//there'd be some beefing up of the security. The variables are in another file just in case this one is accessed.
@@ -38,59 +43,45 @@
 			printf("Connection failed %s\n", $err , $con); //print error id and message
 		}
 		
-		switch ($Function) { //Ben, I'm writing the cases as their Function names; I'll rewrite this after I get it to you
+		switch ($Function) 
+		{ //Ben, I'm writing the cases as their Function names; I'll rewrite this after I get it to you
 		
-		case "auth"
-			//
-			break;
-		
-		case "listDoctors" 
-			listDoctors($testCon);
-			break;
-		
+			case "auth":
+				$dbResults=uAuth($user, $pass, $testCon, $accType);
+				break;
 
-		case "patientList" //I think I also need to check status here but unsure on multiple checks with switch
-			patientList($testCon, $user); //this function is being rewritten
-			break;
+			/*case "pLogin" 
+				uAuth($user, $pass, $testCon, $accType);
+				break;
+			*/
+			case "listDoctors": //returns into an array list of all doctors 
+				$dbResults=listDoctors($testCon);
+				break;
 
-		case "dRegister" //minor rewrite but not much	
-			addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $rating, "", $email, $phone, $location, $testCon);
-			break;
+			case "displayDoc": //I think I also need to check status here but unsure on multiple checks with switch
+				$dbResults=patientList($testCon, $user); //this function is being rewritten
+				break;
 
-		case "pRegister"
-			addPatient($user, $pass, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $drNote, $doctor, $prescription, $testCon);
-			break;
+			case "dRegister": //minor rewrite but not much	
+				addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $rating, "", $email, $phone, $location, $testCon);
+				break;
+
+			case "pRegister":
+				addPatient($user, $pass, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $drNote, $doctor, $prescription, $testCon);
+				break;
 			
-		case "wDocRev" //also minor rewrite needed. this function is for reviewing doctors OR adding notes to patients
-			addReview($firstName, $lastName, $inputText, $testCon, $accType);
-			break;
+			case "wDocRev"://also minor rewrite needed. this function is for reviewing doctors OR adding notes to patients
+				addReview($firstName, $lastName, $inputText, $testCon, $accType);
+				break;
 
-		case "viewRecords" //don't think it needs a rewrite but will check
-			viewRecords($firstName, $lastName, $user, $testCon);
-			break;
+			case "viewRecords": //don't think it needs a rewrite but will check
+				viewRecords($firstName, $lastName, $user, $testCon);
+				break;
 
-		case "viewDoc"
-			viewDoc($firstName, $lastName, $testCon);
-			break;
+			case "viewDoc":
+				viewDoc($firstName, $lastName, $testCon);
+				break;
 		}
-		/*
-		if($Function == "auth") 
-		{
-			$x = "select * from uAuth1 where user='$user' and pass='$pass' and status='$accType'"; // this returns true if user/pass exist in db. otherwise false.
-			$result=mysqli_query($testCon, $x);
-			if($result )
-			{ //see previous comment. if statement with parameter of the mysqli query
-				$output="Login successful.";
-				echo $output;
-			}	
-			else 
-			{
-				$output="Login unsuccessful, check your credentials.";
-				echo $output;
-			}
-		}		
-		echo "Fuck yeah!";
-		*/
 	}
 			
 	$server = new rabbitMQServer("testRabbitMQ.ini", "testServer");

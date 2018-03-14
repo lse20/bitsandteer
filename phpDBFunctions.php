@@ -42,39 +42,39 @@
 			$patientArray[]=$row;
 		}
 		//print_r($patientArray);
-		//$return $patientArray;
+		return $patientArray;
 	}
 	
 	function uAuth($user, $pass, $connection, $accType)
 	{
 	
-		switch $acctype
+		switch ($acctype)
 		{
-			case "patient"
+			case "patient":
 				$q="select name,height,weight, from patientRecords where username='$user' and password='$pass';";
 				break;
 		
-			case "doctor"
+			case "doctor":
 				$q="select name,license,reviews from Doctors where username='$user' and password ='$pass';";
 				break;
 		}
 
-	$query=mysqli_query($connection, $q);
+		$query=mysqli_query($connection, $q);
 	
-	if (!$query)
-	{
-		echo "credential failure." . $query . mysqli_error($connection);
-	}
+		if (!$query)
+		{
+			echo "credential failure." . $query . mysqli_error($connection);
+		}
 	
-	$resA= array();
+		$resA= array();
 	
-	while ($row=mysqli_fetch_row($query)
-	{
-		$resA[]=$row;
-	}
+		while ($row=mysqli_fetch_assoc($query))
+		{
+			$resA[] = $row;
+		}
 	
-	return $resA[];
-	}
+		return $resA;
+		}
 	
 
 	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $rating, $review, $email,$phone, $location, $con)
@@ -96,7 +96,7 @@
 		$query= "INSERT INTO Doctors (username, password, firstName, lastName, name, age, height, weight, sex, diagnosis, drNote, doctor, prescription) VALUES ('$user', '$pass', '$firstName', '$lastName', '$name', $age, '$height', '$weight', '$sex', '$diagnosis', '$drNote', $doctor, '$prescription');";
 		$q=mysqli_query($con, $query);
 		
-		if( mysqli_query($con, $query)
+		if( mysqli_query($con, $query))
 		{
 			echo "connection failure" . $query . "<br>" . mysqli_error($con);
 		}		
