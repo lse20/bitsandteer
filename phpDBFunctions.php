@@ -1,4 +1,5 @@
 <?php
+require_once('dbVar.php');
 
 	function listDoctors($connect)//case:  func is equal to pulling the list ALL doctors from the dsearch -ben 
 	{
@@ -134,43 +135,39 @@
 		}		
 	}
 
-	function addReview($firstName, $lastName, $inputText,$con, $accType) 
+	function addReview($email, $review, $con)
 	{
+		$query="UPDATE Doctors SET review= CONCAT(review,'$review') WHERE email='$email';";
+		
+		if(mysqli_query($con, $query))
+		{
+			echo "Your review has been added. Thank you. \n";
+		}
+		else
+		{
+			$errMsg= "Error: " . $query . "<br>" . mysqli_error($con) . "\n";
+			echo "There was an error adding your review. Please try again later.";
+			logger($errFile, $errMsg);
+		}
+	}
 
-		if($accType=="patient")
+	function addNote($email, $note, $con)
+	{
+		$query="UPDATE patientRecords SET drNote= CONCAT(drNote, '$note') WHERE email='$email';";
+		
+		if(mysqli_query($con, $query)) 
 		{
-			//$query='select review from Doctors where name='$name';'
-			$query="UPDATE Doctors SET review= CONCAT(review, '$inputText') where firstName='$firstName' AND lastName='$lastName';";
-			if (mysqli_query($con, $query))
-			{
-				echo "success";
-			}
-			else
-			{
-				$errMsg = "Error:" . $query . "<br>" . mysqli_error($con);
-				echo $errmsg;//prints to console the error
-				$file = fopen("errorLog.txt","w");//opens the error log file for writing
-				fwrite($file, $errmsg);//writes the error into the log file
-				fclose($file);//closes the file
-			}
+			echo "Your notes have been recorded.";
 		}
-		else if($accType=="doctor")
+		else
 		{
-			$query="UPDATE patientRecords SET drNote= CONCAT(drNote, '$inputText') where firstName='$firstName' AND lastName='$lastName';";
-			if (mysqli_query($con, $query))
-			{
-				echo "success";
-			}
-			else
-			{
-				$errMsg = "Error:" . $query . "<br>" . mysqli_error($con);
-				echo $errmsg;//prints to console the error
-				$file = fopen("errorLog.txt","w");//opens the error log file for writing
-				fwrite($file, $errmsg);//writes the error into the log file
-				fclose($file);//closes the file
-			}
+			$errMsg= "Error; " . $query . "<br>" . mysqli_error($con) . "\n.";
+			echo "There was an error recording your notes. Please try again later.";
+			logger($errFile, $errMsg);
 		}
-	}	
+	}
+
+
 
 	function viewRecords($firstName, $lastName, $accType, $user, $con) 
 	{
