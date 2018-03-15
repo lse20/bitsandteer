@@ -3,5 +3,5 @@
 	$dbPass='toor';
 	$db='it490';
 	$dbAddr='127.0.0.1';
-
+	$errFile="errorLog.txt";
 ?>

@@ -1,12 +1,9 @@
 <?php
-
-	require_once('path.inc');
-	require_once('get_host_info.inc');
 	require_once('rabbitMQLib.inc');
 	require_once('phpDBFunctions.php'); //functions used to get results from the database
 	require_once('dbVar.php'); //login details for the database
 	//	
-	function process_requests($response)
+	function dbInteraction($response)
 	{	
 		//assign variables from forms to usable php variables
 		
@@ -25,6 +22,7 @@
 		$specNo=$response['spec']; //specialization
 		$address=$response['address'];
 		$sex=$response['sex'];
+		//soft checked it; looks good.  Losing sanity, will hard check after I get some sleep -ben
 
 		$dbResults=array();
 
@@ -40,20 +38,22 @@
 		if ($err) //if there's an error
 		{
 			$conErr=mysqli_connect_error($testCon); //assign the error message
-			printf("Connection failed %s\n", $err , $con); //print error id and message
+			//check the dbfunction for how to set up the error log.  I don't want to mess to much with this code here myself -ben
+			echo "Connection failed. Contact an administrator."
+			logger($errFile, $conErr);
 		}
 		
 		switch ($Function) 
 		{ //Ben, I'm writing the cases as their Function names; I'll rewrite this after I get it to you
 		
-			case "auth":
-				$dbResults=uAuth($user, $pass, $testCon, $accType);
+			case "":
+				$dbResults=loginType($user, $pass, $testCon, $accType);
 				break;
 
-			/*case "pLogin" 
-				uAuth($user, $pass, $testCon, $accType);
+			case "login"://decided to consolidate the two logins: dlong and plogin, into one login function since your login function has a switch case -ben
+				loginType($user, $pass, $testCon, $accType, $license);
 				break;
-			*/
+			
 			case "listDoctors": //returns into an array list of all doctors 
 				$dbResults=listDoctors($testCon);
 				break;
@@ -81,11 +81,13 @@
 			case "viewDoc":
 				viewDoc($firstName, $lastName, $testCon);
 				break;
+			case "updateInfo":
+				updateRecords($accType, $changeCol, $changeVal);
 		}
 	}
 			
 	$server = new rabbitMQServer("testRabbitMQ.ini", "testServer");
-	$server->process_requests('process_requests');
+	$server->process_requests('dbInteraction');
 
 
 ?>
