@@ -215,46 +215,40 @@ require_once('dbVar.php');
 		return $searchRes;
 	}
 
-	function viewDoc($firstname, $lastname, $con) 
+	function viewDoc($email, $con) 
 	{
 		//I think it's better if we use license number as the unique key for doctors since in rare cases doctors can have the same names -ben
-		$query="SELECT firstName,lastName,specialization,rating,review,email,phone,location FROM Doctors WHERE firstName='$firstname' and lastName='$lastname';";
+		$query="SELECT firstName,lastName,specialization,rating,review,email,phone,location FROM Doctors WHERE license='$email';";
 		$viewRes=array();
 		$result=mysqli_query($con,$query);
-		if($result) 
-		{
-			echo "success\n";
-		}
-		else
+		if(!$result)
 		{
 			$errMsg = "Connection failure." . $query . "<br>" . mysqli_error($con);
-			echo $errmsg;//prints to console the error
-			$file = fopen("errorLog.txt","w");//opens the error log file for writing
-			fwrite($file, $errmsg);//writes the error into the log file
-			fclose($file);//closes the file
+			echo "Something went wrong. Try again later, or contact technical support";
+			logger($errFile, $errMsg);
 		}
 		
 		while($row=mysqli_fetch_assoc($result))
 		{
 			$viewRes[]=$row;
 		}
-		print_r($viewRes);
-		//return $viewRes;
+		//print_r($viewRes);
+		return $viewRes;
 	}
 	
-	function updateRecords($accType, $changeCol, $changeVal)
+	function updateRecords($accType, $sVar, $changeCol, $changeVal)
 	{
 		//added this new function to let Doc and Pat to update their information
 		if($accType == "patient")
 		{
 			
-			$query="UPDATE patientRecords SET $changeCol='$changeVal' where username='$username';";//dunno if I wrote that one correctly; sorry -ben
+			$query="UPDATE patientRecords SET $changeCol='$changeVal' where username='$sVar';";//dunno if I wrote that one correctly; sorry -ben
 			$viewRes=array();
 			$result=mysqli_query($con,$query);
 		}
 		if($accType == "doctor")
 		{
-			$query="UPDATE Doctors SET $changeCol='$changeVal' where lNo ='$lNo';";//dunno if I wrote that one correctly; sorry -ben
+			$query="UPDATE Doctors SET $changeCol='$changeVal' where email='$sVar';";//dunno if I wrote that one correctly; sorry -ben
 			$viewRes=array();
 			$result=mysqli_query($con,$query);
 		}
@@ -265,8 +259,8 @@ require_once('dbVar.php');
 		else
 		{
 			$errMsg = "Connection failure." . $query . "<br>" . mysqli_error($con);
-			echo $errmsg;//prints to console the error
-			logger("errorLog.txt", $errMSg);
+			echo "Update failed. Contact support."
+			logger($errFile, $errMSg);
 		}
 	}
 	
@@ -278,5 +272,49 @@ require_once('dbVar.php');
 
 	}
 	
+	function viewPatInfo($user, $con)
+	{
+		$q="SELECT name,email,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='$user';";
+		$query=mysqli_query($con, $q);
+		
+		if(!$query)
+		{
+			$errMsg= "Query failure." . $q . "<br>" . mysqli_error($con);
+			echo "Failed to connect. Contact support.";
+			logger($errFile, $errMsg);
+		}	
+	}
+
+	function rateDoctor($email, $rating, $con)
+	{
+		$sumR=0;
+		$aRate=array();
+		$q="SELECT rating FROM Doctors WHERE email='$email';";
+		$query=mysqli_query($con, $q);
+		if(!$query)
+		{
+			echo "There was an error. Contact support.";
+			$errMsg= "Query Error: " . $query . "<br>" . mysqli_error($con);
+			logger($errFile, $errMsg);
+		}
+		
+		while($row=mysqli_fetch_assoc($query))
+		{
+			$aRate[]=$row['email'];
+		}
+		$oldR=$aRate[0];
+		$oldR=$oldR+$rating;
+		$old=intdiv($oldR,2);
+		
+		$q="UPDATE rating FROM Doctors WHERE email='$email';";
+		$query=mysqli_query($con,$q);
+		if(!$query)
+		{
+			echo "There was an error. Contact support.";
+			$errMsg= "Query Error: " . $query . "<br>" . mysqli_error($con);
+			logger($errFile, $errMsg);
+		}
+		
+	}
 
 ?>
