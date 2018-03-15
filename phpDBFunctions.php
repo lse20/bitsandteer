@@ -134,7 +134,7 @@
 		}		
 	}
 
-	function addReview($firstName, $lastName, $inputText,$con, $accType) 
+	/* function addReview($firstName, $lastName, $inputText,$con, $accType) 
 	{
 
 		if($accType=="patient")
@@ -171,11 +171,41 @@
 			}
 		}
 	}	
+*/
+
+	function addReview($email, $review)
+	{               
+		$query="UPDATE Doctors SET review= CONCAT(review, '$review') where email='$email';";
+		if (mysqli_query($con, $query))
+		{
+			echo "Your review has been successfully submitted!";
+		}
+		else
+		{
+			$errMsg = "Error:" . $query . "<br>" . mysqli_error($con);
+			echo "There was an error adding your review.";
+			logger($errFile, $errMsg);
+		}
+	}
+	
+	function addNote($email, $note) //$email should be changed to pNum in next version of DB. check Trello-lou
+	{
+		$query="UPDATE patientRecords SET drNote= CONCAT(drNote, '$review') WHERE email='$email';";
+		if (mysqli_query($con,$query))
+		{
+			echo "Your notes have been updated!" //add 'for patient pNum' in there after the pNum update
+		}
+		else
+		{
+			$errMsg= "Error:" . $query . "<br>" . mysqli_error($con) . "\n";
+			echo "Error updating notes!";
+			logger($errFile, $errMsg);
+		}
+	}
 
 	function viewRecords($firstName, $lastName, $accType, $user, $con) 
 	{
-		if ($accType=="doctor")
-		{
+		if ($accType=="doctor")		{
 			$query="SELECT drNote from patientRecords where firstName='$firstName' and lastName='$lastName';";
 		}	
 		else if($accType=="patient")
