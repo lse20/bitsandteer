@@ -86,16 +86,18 @@
 		switch ($Function) 
 		{ //Ben, I'm writing the cases as their Function names; I'll rewrite this after I get it to you
 		
-			case "":
+			/*case "":
 				$dbResults=loginType($user, $pass, $testCon, $accType);
 				break;
-
+*/
 			case "dlogin"://passes username, password, and license number to authenticate the doctor.  Returns true if credential are good, false if they don't exist.
-				doctorLogin($user, $pass, $lNo, $testCon);
+				$dbResults=docLogin($user, $pass, $testCon, $lNo);
+				return $dbResults;
 				break;
 			
 			case "plogin"://same as doctor but doesn't use license number
-				patientLogin($user, $pass, $testCon);
+				$dbResults=patientLogin($user, $pass, $testCon);
+				return $dbResults;
 				break;
 			
 			case "searchDoctors": //receives a search type (ie: spec) and a search word (ie: gynecology) and searches the doctor's table for everyone that matches the two parameters.   Returns an array of 0-whatever number of doctors that meets the criteria and their information and sends it back to the front end
@@ -107,19 +109,23 @@
 				break;
 
 			case "dRegister": //registers the information of Doctors.  Simple, straight forward
-				addDoctor($user, $pass, $lNo, $fName, $lName, $sex, $spec, "", $email, $telNum, $address, $testCon);
+				if(addDoctor($user, $pass, $lNo, $fName, $lName, $sex, $spec, "", $email, $telNum, $address, $testCon))
+					return true;
 				break;
 
 			case "pRegister"://registers the information of Patients.  Same as above
-				addPatient($user, $pass, $fName, $lName, $age, $height, $weight, $sex, $mHist, $testCon);
+				if(addPatient($user, $pass, $fName, $lName, $age, $height, $weight, $sex, $mHist, $testCon))
+					return true;
 				break;
 			
 			case "wDocRev"://adds a Doctor Review.  Searches for the Doctor's table via a unique key email and adds a review to their Doctor Reivew cell
-				addReview($email, $rev, $testCon);
+				if(addReview($email, $rev, $testCon))
+					return true;
 				break;
 			
 			case "wPatNote"://adds a Patient Note.  Same as above; unique key is the $user, adds the note to the Doctor's note column
-				addNote($user, $note, $testCon);
+				if(addNote($user, $note, $testCon))
+					return true;
 				break;
 
 			case "displayPatient": //displays patient's information.  Sends the logged in patient's information to the front end to display.  Searches the patient's row via the username
@@ -127,11 +133,14 @@
 				break;
 
 			case "rateDoc": //sets a rating to a doctor.  Uses unique key email to find the Doctor row and sets an int between 0 and 5 to them.  Every additional rating is then averaged.
-				rateDoc($email, $rating, $con);
+				if(rateDoc($email, $rating, $con))
+					return true;
 				break;
 
 			case "updateInfo": //updates information for either account types.  First defines the account type to set the right tables, $searchVar will either contain an email if account type is doctor; username if it is a patient account.  $changeCol searches for the column that needs to be changed and $changeVal is that new information. -edited
-				updateRecords($accType, $searchVar, $changeCol, $changeVal);
+				if(updateRecords($accType, $searchVar, $changeCol, $changeVal))
+					return true;
+				break;
 		}
 	}
 			

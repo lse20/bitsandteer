@@ -1,6 +1,7 @@
 <?php
 require_once('dbVar.php');
 
+	
 	function listDoctors($connect)//case:  func is equal to pulling the list ALL doctors from the dsearch -ben 
 	{
 	//printing a list of doctors is easy. this code is written to assume
@@ -54,7 +55,7 @@ require_once('dbVar.php');
 		{
 			$errmsg = "connection failure" . $query . "<br>" . mysqli_error($connect);//creates the error message and sets it to a variable
 			echo $errmsg;//prints to console the error
-			$file = fopen("errorLog.txt","w");//opens the error log file for writing
+			$file = fopen("$errLog","w");//opens the error log file for writing
 			fwrite($file, $errmsg);//writes the error into the log file
 			fclose($file);//closes the file
 		}
@@ -66,42 +67,49 @@ require_once('dbVar.php');
 		return $patientListArray;
 	}
 	
-	function loginType($user, $pass, $connection, $accType, $license)//changed the name here for ease of reference|case:  login|also added in the license number
+	function docLogin($user, $pass, $connection, $license)//changed the name here for ease of reference|case:  login|also added in the license number
 	{
 	
-		switch ($acctype)
-		{
-			case "patient":
-				$q="select name,height,weight, from patientRecords where username='$user' and password='$pass';";
-				break;
-		
-			case "doctor":
-				$q="select name,license,reviews from Doctors where username='$user' and password ='$pass' and license = '$license';";
-				break;
-		}
+		$q="select name,license,reviews from Doctors where username='$user' and password ='$pass' and license = '$license';";
 
 		$query=mysqli_query($connection, $q);
 	
 		if (!$query)
 		{
 			$errMsg = "credential failure." . $query . mysqli_error($connection);
-			echo $errmsg;//prints to console the error
-			$file = fopen("errorLog.txt","w");//opens the error log file for writing
-			fwrite($file, $errmsg);//writes the error into the log file
-			fclose($file);//closes the file
-		}
+			echo "connection error. contact support. $errMsg";//prints to console the error
+			logger($errMsg);
+		}	
 	
 		$resA= array();
 	
 		while ($row=mysqli_fetch_assoc($query))
 		{
 			$resA[] = $row;
-		}
-	
-		return $resA;
-		}
-	
+		}	
+		return $resA;	
+	}
 
+	function pLogin($user, $pass, $con)
+	{
+		$q="select name,height,weight,age,doctor,drNote from patientRecords where username='$user' and password='$pass';";
+		$query=mysqli_query($connection, $q);
+
+		if(!$query)
+		{
+			$errMsg="credentials are incorrect: " . $query . mysqli_error($connection);
+			echo "connection error, contact support $errMsg";
+			logger($errMsg);
+		}
+		
+		$resA=array();
+		
+		while ($row=mysqli_fetch_assoc($query))
+		{
+			$resA[]=$row;
+		}
+		return $resA;
+	}
 	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $rating, $review, $email,$phone, $location, $con)
 	{
 		$name= $firstName . " " . $lastName;
@@ -113,7 +121,7 @@ require_once('dbVar.php');
 		{
 			$errMsg = "connection failure". $query . "<br>". mysqli_error($con);
 			echo $errmsg;//prints to console the error
-			$file = fopen("errorLog.txt","w");//opens the error log file for writing
+			$file = fopen("$errLog","w");//opens the error log file for writing
 			fwrite($file, $errmsg);//writes the error into the log file
 			fclose($file);//closes the file
 		}
@@ -129,7 +137,7 @@ require_once('dbVar.php');
 		{
 			$errMsg = "connection failure" . $query . "<br>" . mysqli_error($con);
 			echo $errmsg;//prints to console the error
-			$file = fopen("errorLog.txt","w");//opens the error log file for writing
+			$file = fopen("$errLog","w");//opens the error log file for writing
 			fwrite($file, $errmsg);//writes the error into the log file
 			fclose($file);//closes the file
 		}		
@@ -147,7 +155,7 @@ require_once('dbVar.php');
 		{
 			$errMsg= "Error: " . $query . "<br>" . mysqli_error($con) . "\n";
 			echo "There was an error adding your review. Please try again later.";
-			logger($errFile, $errMsg);
+			logger($errMsg);
 		}
 	}
 
@@ -163,7 +171,7 @@ require_once('dbVar.php');
 		{
 			$errMsg= "Error; " . $query . "<br>" . mysqli_error($con) . "\n.";
 			echo "There was an error recording your notes. Please try again later.";
-			logger($errFile, $errMsg);
+			logger($errMsg);
 		}
 	}
 
@@ -201,7 +209,7 @@ require_once('dbVar.php');
 		{
 			$errMsg = "Query failure." . $query . "<br>" . mysqli_error($con);
                         echo "Failed to find any results. Try another search?";//prints to console the error
-                        $file = fopen("errorLog.txt","w");//opens the error log file for writing
+                        $file = fopen("$errLog","w");//opens the error log file for writing
                         fwrite($file, $errmsg);//writes the error into the log file
                         fclose($file);//closes the file
 		}
@@ -225,7 +233,7 @@ require_once('dbVar.php');
 		{
 			$errMsg = "Connection failure." . $query . "<br>" . mysqli_error($con);
 			echo "Something went wrong. Try again later, or contact technical support";
-			logger($errFile, $errMsg);
+			logger($errMsg);
 		}
 		
 		while($row=mysqli_fetch_assoc($result))
@@ -259,21 +267,21 @@ require_once('dbVar.php');
 		else
 		{
 			$errMsg = "Connection failure." . $query . "<br>" . mysqli_error($con);
-			echo "Update failed. Contact support."
-			logger($errFile, $errMSg);
+			echo "Update failed. Contact support.";
+			logger($errLog, $errMSg);
 		}
 	}
 	
-	function logger($fName, $errorMsg) 
+	function logger($errorMessage) //todo: make this concat the file 
 	{
-		$file = fopen("$fName","w");//opens the error log file for writing
-		fwrite($file, $errmsg);//writes the error into the log file
+		$file = fopen("errorLog.txt","w");//opens the error log file for writing
+		fwrite($file, $errorMessage);//writes the error into the log file
 		fclose($file);//closes the file
-
 	}
 	
 	function viewPatInfo($user, $con)
 	{
+		$retArr=array();
 		$q="SELECT name,email,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='$user';";
 		$query=mysqli_query($con, $q);
 		
@@ -281,9 +289,16 @@ require_once('dbVar.php');
 		{
 			$errMsg= "Query failure." . $q . "<br>" . mysqli_error($con);
 			echo "Failed to connect. Contact support.";
-			logger($errFile, $errMsg);
-		}	
-	}
+			logger($errMsg);
+		}
+		
+		while($row=mysqli_fetch_assoc($query))
+		{
+			$retArr[]=$row;
+		}
+		//$retArr[]=mysqli_fetch_row($query);
+		return $retArr;
+	}	
 
 	function rateDoctor($email, $rating, $con)
 	{
@@ -295,26 +310,25 @@ require_once('dbVar.php');
 		{
 			echo "There was an error. Contact support.";
 			$errMsg= "Query Error: " . $query . "<br>" . mysqli_error($con);
-			logger($errFile, $errMsg);
+			logger($errMsg);
 		}
 		
 		while($row=mysqli_fetch_assoc($query))
 		{
-			$aRate[]=$row['email'];
+			$aRate[]=$row['rating'];
 		}
 		$oldR=$aRate[0];
 		$oldR=$oldR+$rating;
-		$old=intdiv($oldR,2);
+		$oldR=intdiv($oldR,2);
 		
-		$q="UPDATE rating FROM Doctors WHERE email='$email';";
+		$q="UPDATE Doctors SET rating=$oldR WHERE email='$email';";
 		$query=mysqli_query($con,$q);
 		if(!$query)
 		{
 			echo "There was an error. Contact support.";
 			$errMsg= "Query Error: " . $query . "<br>" . mysqli_error($con);
-			logger($errFile, $errMsg);
+			logger($errMsg);
 		}
 		
 	}
-
 ?>

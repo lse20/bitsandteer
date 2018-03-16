@@ -1,0 +1,1 @@
+Query Error: <br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM Doctors WHERE email='ghouse@deepshit.com'' at line 1
