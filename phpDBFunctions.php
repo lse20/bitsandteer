@@ -1,5 +1,6 @@
 <?php
 require_once('dbVar.php');
+require_once('rabbitMQLib.inc');
 
 	
 	function listDoctors($connect)//case:  func is equal to pulling the list ALL doctors from the dsearch -ben 
@@ -67,16 +68,16 @@ require_once('dbVar.php');
 		return $patientListArray;
 	}
 	
-	function docLogin($user, $pass, $connection, $license)//changed the name here for ease of reference|case:  login|also added in the license number
+	function dLogin($user, $pass, $con, $license)//changed the name here for ease of reference|case:  login|also added in the license number
 	{
 	
 		$q="select name,license,reviews from Doctors where username='$user' and password ='$pass' and license = '$license';";
 
-		$query=mysqli_query($connection, $q);
+		$query=mysqli_query($con, $q);
 	
 		if (!$query)
 		{
-			$errMsg = "credential failure." . $query . mysqli_error($connection);
+			$errMsg = "credential failure." . $query . mysqli_error($con);
 			echo "connection error. contact support. $errMsg";//prints to console the error
 			logger($errMsg);
 		}	
@@ -93,11 +94,11 @@ require_once('dbVar.php');
 	function pLogin($user, $pass, $con)
 	{
 		$q="select name,height,weight,age,doctor,drNote from patientRecords where username='$user' and password='$pass';";
-		$query=mysqli_query($connection, $q);
+		$query=mysqli_query($con, $q);
 
 		if(!$query)
 		{
-			$errMsg="credentials are incorrect: " . $query . mysqli_error($connection);
+			$errMsg="credentials are incorrect: " . $query . mysqli_error($con);
 			echo "connection error, contact support $errMsg";
 			logger($errMsg);
 		}
@@ -108,7 +109,8 @@ require_once('dbVar.php');
 		{
 			$resA[]=$row;
 		}
-		return $resA;
+		$client = new rabbitMQClient('testRabbitMQ.ini','testServer');
+		$client -> send_requests($resA);
 	}
 	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $rating, $review, $email,$phone, $location, $con)
 	{

@@ -1,76 +1,43 @@
 <?php
+
+	require_once('path.inc');
+	require_once('get_host_info.inc');
 	require_once('rabbitMQLib.inc');
 	require_once('phpDBFunctions.php'); //functions used to get results from the database
 	require_once('dbVar.php'); //login details for the database
-	
-	$client = new rabbitMQClient('testRabbitMQ.ini','testServer');	
-	function dbInteraction($response)
+	//	
+	function process_request($response)
 	{	
-		var_dump($response);
-		$accType = $response['accType'];
 		//assign variables from forms to usable php variables
 		
-		//Ben, please double check these for me. Feel free to edit this as needed.
-		/*if($response['accType'] == "")
-		{
-			$msg = "error:  no function mentioned";
-			echo $msg;
-			$file = fopen("errorLog.txt","w");
-			fwrite($file, $errmsg);
-			fclose($file);
-		}*/
-		if($response['accType'] == "doctor")
-		{	
-			//$Function = $response['function'];
-			$user=$response['user']; //=$Req[1]
-			$pass=$response['pass'];
-			//$rePass=$response['rePass'];
-			$email=$response['email'];
-			$telNo=$response['telNo'];
-			$fName=$response['fName'];
-			$lName=$response['lName'];
-			$lNo=$response['lNo'];//ask Ben wtf this is
-			$spec=$response['spec']; //specialization
-			$address=$response['address'];
-			$sex=$response['sex'];
-			$func=$response['func'];
-		}
-		elseif($response['accType'] == "patient")
-		{
-			$user=$response['user'];
-			$pass=$response['pass'];
-			$email=$response['email'];
-			$fName=$response['fName'];
-			$lName=$response['lName'];
-			$age=$response['age'];
-			$height=$response['height'];
-			$weight=$response['weight'];
-			$sex=$response['sex'];
-			$mHist=$response['mHist'];
-			$func=$response['func'];
-		}
-		elseif($response['func'] == "dlogin")
-		{
-			$user=$response['user'];
-			$pass=$response['pass'];
-			$accType=$response['accType'];
-			$lNo=$response['lNo'];
-		}
-		else
-		{
-			$user=$response['user'];
-			$pass=$response['pass'];
-			$accType=$response['accType'];
-		}
-		//soft checked it; looks good.  Losing sanity, will hard check after I get some sleep -ben
+		//Ben, please double check these for me. Feel free to edit this as needed. 
+		$client= new rabbitMQClient("testRabbitMQ.ini", "testServer");
+		$Function = $response['function'];	
+	//	$Function = $response['function'];
+	//	$user=$response['username']; //=$Req[1]
+	//	$pass=$response['password']; 
+		/*
+		$rePass=$response['rePass'];
+		$accType=$response['status'];
+		$eMail=$response['email'];
+		$telNo=$response['telNo'];
+		$firstName=$response['fname'];
+		$lastName=$response['lname'];
+		$license=$response['lNo'];//ask Ben wtf this is
+		$specNo=$response['spec']; //specialization
+		$address=$response['address'];
+		$sex=$response['sex'];
+		*/ 
 
 		$dbResults=array();
+		if($response['function']=="lou")
+		{
+			$user=$response['user'];
+			$pass=$response['pass'];
+			
+		}
 
-		//$echo "".$user;
-		
-		//open a connection to the mysql server running on the same machine this php is running on
-
-		$testCon=mysqli_connect("$dbAddr", "$dbUser","$dbPass","$db"); //create a connection to the database. in the real version
+		$testCon=mysqli_connect("127.0.0.1", "root","toor","it490"); //create a connection to the database. in the real version
 		//there'd be some beefing up of the security. The variables are in another file just in case this one is accessed.
 		
 		$err=mysqli_connect_errno(); //function returns error id value from last connection
@@ -78,88 +45,55 @@
 		if ($err) //if there's an error
 		{
 			$conErr=mysqli_connect_error($testCon); //assign the error message
-			//check the dbfunction for how to set up the error log.  I don't want to mess to much with this code here myself -ben
-			printf("Connection failed %s\n", $err , $testCon); //print error id and message
+			printf("Connection failed %s\n", $err , $con); //print error id and message
 		}
 		
 		switch ($Function) 
 		{ //Ben, I'm writing the cases as their Function names; I'll rewrite this after I get it to you
 		
-			/*case "":
-				$dbResults=loginType($user, $pass, $testCon, $accType);
+			case "auth":
+				$dbResults=uAuth($user, $pass, $testCon, $accType);
 				break;
-*/
-			case "dlogin"://passes username, password, and license number to authenticate the doctor.  Returns true if credential are good, false if they don't exist.
-				$dbResults=docLogin($user, $pass, $testCon, $lNo);
-				client->send_request($dbResults);
+
+			case "pLogin":
+				$user=$response["user"];
+				$pass=$response["pass"];
+				pLogin($user, $pass, $testCon);
 				break;
 			
-			case "plogin"://same as doctor but doesn't use license number
-				$dbResults=patientLogin($user, $pass, $testCon);
-				client->send_request($dbResults);
+			case "listDoctors": //returns into an array list of all doctors 
+				$dbResults=listDoctors($testCon);
+				break;
+
+			case "displayDoc": //I think I also need to check status here but unsure on multiple checks with switch
+				$dbResults=patientList($testCon, $user); //this function is being rewritten
+				break;
+
+			case "dRegister": //minor rewrite but not much	
+				addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $rating, "", $email, $phone, $location, $testCon);
+				break;
+
+			case "pRegister":
+				addPatient($user, $pass, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $drNote, $doctor, $prescription, $testCon);
 				break;
 			
-			case "searchDoctors": //receives a search type (ie: spec) and a search word (ie: gynecology) and searches the doctor's table for everyone that matches the two parameters.   Returns an array of 0-whatever number of doctors that meets the criteria and their information and sends it back to the front end
-				$dbResults=searchDoctors($searchType, $searchWord, $testCon);
-				client->send_request($dbResults);
-				break;//client->send_request(true);;
-
-			case "displayDoc": //displays the list of patients attached to the doctor.  Searches the Doctor's specific row by the doctor's unique email
-				$dbResults=patientList($testCon, $email); //this function is being rewritten
-				client->send_request($dbResults);
+			case "wDocRev"://also minor rewrite needed. this function is for reviewing doctors OR adding notes to patients
+				addReview($firstName, $lastName, $inputText, $testCon, $accType);
 				break;
 
-			case "dRegister": //registers the information of Doctors.  Simple, straight forward
-				$bool=array('dReg'=>'false');
-				if(addDoctor($user, $pass, $lNo, $fName, $lName, $sex, $spec, "", $email, $telNum, $address, $testCon))
-					$bool=array('operation'=>'true');//client->send_request(true);
-				client->send_request($bool);
+			case "viewRecords": //don't think it needs a rewrite but will check
+				viewRecords($firstName, $lastName, $user, $testCon);
 				break;
 
-			case "pRegister"://registers the information of Patients.  Same as above
-				$bool=array('pReg'=>'false');
-				if(addPatient($user, $pass, $fName, $lName, $age, $height, $weight, $sex, $mHist, $testCon))
-					$bool=array('operation'=>'true');//client->send_request(true);
-				client->send_request($bool);
-				break;
-			
-			case "wDocRev"://adds a Doctor Review.  Searches for the Doctor's table via a unique key email and adds a review to their Doctor Reivew cell
-				$bool=array('operation'=>'false');
-				if(addReview($email, $rev, $testCon))
-					$bool=array('operation'=>'true');//client->send_request(true);
-				client->send_request($bool);
-				break;
-			
-			case "wPatNote"://adds a Patient Note.  Same as above; unique key is the $user, adds the note to the Doctor's note column
-				$bool=array('operation'=>'false');
-				if(addNote($user, $note, $testCon))
-					$bool=array('operation'=>'true');//client->send_request(true);
-				client->send_request($bool);
-				break;
-
-			case "displayPatient": //displays patient's information.  Sends the logged in patient's information to the front end to display.  Searches the patient's row via the username
-				$dbResults = viewPatInfo($user, $testCon);
-				client->send_request($dbResults);
-				break;
-
-			case "rateDoc": //sets a rating to a doctor.  Uses unique key email to find the Doctor row and sets an int between 0 and 5 to them.  Every additional rating is then averaged.
-				$bool=array('operation'=>'false');
-				if(rateDoc($email, $rating, $con))
-					$bool=array('operation'=>'true');//client->send_request(true);
-				client->send_request($bool);
-				break;
-
-			case "updateInfo": //updates information for either account types.  First defines the account type to set the right tables, $searchVar will either contain an email if account type is doctor; username if it is a patient account.  $changeCol searches for the column that needs to be changed and $changeVal is that new information. -edited
-				$bool=array('operation'=>'false');
-				if(updateRecords($accType, $searchVar, $changeCol, $changeVal))
-					$bool=array('operation'=>'true');//client->send_request(true);
-				client->send_array($bool);
+			case "viewDoc":
+				viewDoc($firstName, $lastName, $testCon);
 				break;
 		}
+		$client->send_request($dbResults);
 	}
 			
 	$server = new rabbitMQServer("testRabbitMQ.ini", "testServer");
-	$server->process_requests('dbInteraction');
+	$server->process_requests('process_request');
 
 
 ?>
