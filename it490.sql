@@ -37,7 +37,8 @@ CREATE TABLE `Doctors` (
   `phone` int(15) DEFAULT NULL,
   `location` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`username`),
-  UNIQUE KEY `license` (`license`)
+  UNIQUE KEY `license` (`license`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -47,7 +48,7 @@ CREATE TABLE `Doctors` (
 
 LOCK TABLES `Doctors` WRITE;
 /*!40000 ALTER TABLE `Doctors` DISABLE KEYS */;
-INSERT INTO `Doctors` VALUES ('100001','test',10,'Gregory','House','Gregory House','M','Bullshit',0,'Worst Doctor Ever.\" Really.\" Really.Fuck you, asshole.','ghouse@deepshit.com',2337002,'Jail');
+INSERT INTO `Doctors` VALUES ('100001','test',10,'Gregory','House','Gregory House','M','Bullshit',1,'Worst Doctor Ever.\" Really.\" Really.Fuck you, asshole.','ghouse@deepshit.com',2337002,'Jail'),('rich','pass',12345678,'Rich','Doza','Rich Doza','m','Lolicology',0,'hes a lolicon','iamaloli@loli.con',2,'Japan');
 /*!40000 ALTER TABLE `Doctors` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,10 +61,10 @@ DROP TABLE IF EXISTS `patientRecords`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `patientRecords` (
   `username` varchar(10) NOT NULL,
-  `password` varchar(20) DEFAULT NULL,
   `firstName` varchar(50) DEFAULT NULL,
   `lastName` varchar(50) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
   `age` int(3) DEFAULT NULL,
   `height` varchar(3) DEFAULT NULL,
   `weight` varchar(3) DEFAULT NULL,
@@ -72,7 +73,9 @@ CREATE TABLE `patientRecords` (
   `drNote` varchar(100) DEFAULT NULL,
   `doctor` int(20) DEFAULT NULL,
   `prescription` varchar(40) DEFAULT NULL,
-  PRIMARY KEY (`username`)
+  `address` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`username`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -82,7 +85,7 @@ CREATE TABLE `patientRecords` (
 
 LOCK TABLES `patientRecords` WRITE;
 /*!40000 ALTER TABLE `patientRecords` DISABLE KEYS */;
-INSERT INTO `patientRecords` VALUES ('1','test','Robert','Baratheon','Robert Baratheon',36,'6\'6','300','M','Too fat for his armor','Needs to drink lessFuck you, asshole.Fuck you, asshole.',10,'exercise'),('2','','','','Ned Stark',2,'','','','','',10,'');
+INSERT INTO `patientRecords` VALUES ('1','Robert','Baratheon','Robert Baratheon',NULL,36,'6\'6','300','M','Too fat for his armor','Needs to drink lessFuck you, asshole.Fuck you, asshole.',12345678,'exercise',NULL),('2','','','Ned Stark',NULL,2,'6\'2','','','','',10,'',NULL);
 /*!40000 ALTER TABLE `patientRecords` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,28 +117,30 @@ INSERT INTO `test` VALUES ('alice','bob','carol','doug','eliza','frank');
 UNLOCK TABLES;
 
 --
--- Table structure for table `uAuth1`
+-- Table structure for table `uAuth`
 --
 
-DROP TABLE IF EXISTS `uAuth1`;
+DROP TABLE IF EXISTS `uAuth`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `uAuth1` (
+CREATE TABLE `uAuth` (
   `user` varchar(20) NOT NULL,
   `pass` varchar(20) NOT NULL,
-  `status` tinyint(1) DEFAULT NULL,
+  `type` enum('p','d') NOT NULL,
+  `login` int(7) DEFAULT NULL,
+  `failedLog` int(7) DEFAULT NULL,
   PRIMARY KEY (`user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `uAuth1`
+-- Dumping data for table `uAuth`
 --
 
-LOCK TABLES `uAuth1` WRITE;
-/*!40000 ALTER TABLE `uAuth1` DISABLE KEYS */;
-INSERT INTO `uAuth1` VALUES ('tester','pass',1);
-/*!40000 ALTER TABLE `uAuth1` ENABLE KEYS */;
+LOCK TABLES `uAuth` WRITE;
+/*!40000 ALTER TABLE `uAuth` DISABLE KEYS */;
+INSERT INTO `uAuth` VALUES ('1','test','p',NULL,NULL),('ben','pass','p',NULL,NULL),('bobbyb','openfield','p',NULL,NULL),('ghouse','edgelord','d',NULL,NULL),('nstark','honor4life','p',NULL,NULL),('rich','pass','d',NULL,NULL);
+/*!40000 ALTER TABLE `uAuth` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -147,4 +152,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-12 14:46:44
+-- Dump completed on 2018-04-24 19:57:02
