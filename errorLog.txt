@@ -1,1 +1,36 @@
-Query Error: <br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM Doctors WHERE email='ghouse@deepshit.com'' at line 1
+responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+
+receiving rabbit messageestablishing database connectionresponding and closing function 
+
+receiving rabbit messageestablishing database connectionQuery failure.SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='';<br>Unknown column 'fName' in 'field list'responding and closing function 
+

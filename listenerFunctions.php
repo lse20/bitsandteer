@@ -61,18 +61,14 @@ require_once('rabbitMQLib.inc');
 			fclose($file);//closes the file
 		}
 
-		while($row = $mysqli_fetch_assoc($result))
-		{
-			$patientListArray[] = $row;
-		}
-		return $patientListArray;
+		$row = $mysqli_fetch_assoc($result);
+		return $row;
 	}
 	
 	function dLogin($user, $pass, $con, $license)//changed the name here for ease of reference|case:  login|also added in the license number
 	{
 	
 		$q="select username from Doctors where username='$user' and password ='$pass' and license = '$license';";
-
 		$query=mysqli_query($con, $q);
 	
 		if (!$query)
@@ -91,7 +87,6 @@ require_once('rabbitMQLib.inc');
 				echo $r['username'];
 				return "0";
 			}
-
 		}
 	}
 
@@ -119,58 +114,103 @@ require_once('rabbitMQLib.inc');
 				return "3";
 		}
 	}
-
-	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $email, $phone, $location, $con)
+	
+	function login($user, $pass, $con) 
 	{
-		echo "test doc register" . $phone . $location . $email . "\n";
-		$name= $firstName . " " . $lastName;
-		$query= "INSERT INTO Doctors (username, password, license, firstName, lastName, name, gender, specialization, rating, review, email, phone, location) VALUES ('$user', '$pass', $license, '$firstName','$lastName', '$name', '$gender', '$special', 0, '', '$email', $phone, '$location');";		
-		$q=mysqli_query($con,$query);
+		logger(" Login attempt for user: $user "); //record 
+		$q="SELECT user,type FROM uAuth WHERE user='$user' AND pass='$pass';";
+		echo "\n $q \n";
+		$query=mysqli_query($con,$q);
 
+		if(!$query) 
+		{
+			$errMsg = " login failure: " . mysqli_error($query);
+			echo $errMsg . "$user" . "$pass";
+			logger($errMsg);
+			return $errMsg;
+		}
+
+		$r=mysqli_fetch_assoc($query);
+		var_dump($r);
+		$blah=$r['type'];
+		$userID=$r['user'];
+		echo $userID;
+		$arr=array("0"=>$blah, "userID"=>$userID);
+		echo "ARRAY VARDUMP SHOULD BE HERE \n";
+		var_dump($arr);
+		echo "ARRAY VARDUMP SHOULD BE ABOVE \n";
+		
+		return $arr;
+	}
+
+	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $rating, $review, $email,$phone, $location, $con)
+	{
+		$name= $firstName . " " . $lastName;
+		$query= "INSERT INTO Doctors (username, password, license, firstName, lastName, name, gender, specialization, rating, review, email, phone, location) VALUES ($user, '$pass', $license, '$firstName','$lastName', '$name', '$gender', '$special', '$rating', '$review', '$email', $phone, '$location');";
+		
+		$q=mysqli_query($con,$query);
 		if(!$q) 
 		{
-			$errMsg = "connection failure". $query . "<br>". mysqli_error($con);
-			echo $errMsg;//prints to console the erro
+			$errMsg = " connection failure". $query . "<br>". mysqli_error($con);
+			echo $errMsg;//prints to console the error
 			logger($errMsg);
 		}
 	}
 
-	function addPatient($user, $pass, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $drNote, $doctor, $prescription, $con)
+	function addPatient($user, $pass, $email, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $address, $con)
 	{
 		$name=$firstName . " " . $lastName;
-		$query= "INSERT INTO Doctors (username, password, firstName, lastName, name, age, height, weight, sex, diagnosis, drNote, doctor, prescription) VALUES ('$user', '$pass', '$firstName', '$lastName', '$name', $age, '$height', '$weight', '$sex', '$diagnosis', '$drNote', $doctor, '$prescription');";
-		$q=mysqli_query($con, $query);
+		$q="INSERT INTO uAuth (user, pass, type) VALUES ('$user', '$pass', 'p');";
+		$query=mysqli_query($con, $q);
 		
-		if( mysqli_query($con, $query))
+		if(!$query)
 		{
-			$errMsg = "connection failure" . $query . "<br>" . mysqli_error($con);
-			echo $errmsg;//prints to console the error
-			$file = fopen("$errLog","w");//opens the error log file for writing
-			fwrite($file, $errmsg);//writes the error into the log file
-			fclose($file);//closes the file
-		}		
+			$errMsg= " adding to uAuth error" . $query . "<br>" . mysqli_error($con);
+			echo $errMsg;
+			logger($errMsg);
+		}
+		else
+		{
+			$q= "INSERT INTO patientRecords (username, password, firstName, lastName, name, email , age, height, weight, sex, diagnosis, drNote, doctor, prescription, address) VALUES ('$user', '$pass', '$firstName', '$lastName', '$name', '$email', $age, '$height', '$weight', '$sex', '$diagnosis', '', 0, '', '$address');";
+			$query=mysqli_query($con, $query);
+			echo "hi\n";
+			echo "$q \n";
+			if(!$query)
+			{
+				$errMsg = "connection failure" . $query . "<br>" . mysqli_error($con);
+				echo "$errMsg";
+				logger($errMsg);
+				return false;
+			}
+			echo "returning true";
+			return true;
+		}
+		return true;			
 	}
 
 	function addReview($user,$review, $con)
 	{	
-		$query="SELECT doctor FROM patientRecords WHERE user='$user';";
-		$docN=mysqli_query($con,$query);
-		
+		$q="SELECT doctor FROM patientRecords WHERE username='$user';";
+		$docN=mysqli_query($con,$q);	
 		$r=mysqli_fetch_assoc($docN);
 		echo "add review vardump";
 		var_dump($r);
-		$lNo=$r['doctor'];
-		$query="UPDATE Doctors SET review= CONCAT(review,'$review') WHERE license='$lNo';";
-		
-		if(mysqli_query($con, $query))
+		$license=$r['doctor'];
+		echo $review;
+		echo "\n Doc license: " . $license . "\n";
+		$q="UPDATE Doctors SET review = CONCAT(review, '$review') WHERE license='$license';";
+		echo "\n $q \n ";	
+		$query=mysqli_query($con, $q);
+		if(!$query)
 		{
-			echo "Your review has been added. Thank you. \n";
+			$errMsg= "Error: " . $q . "<br>" . mysqli_error($con) . "\n";
+			echo $errMsg;
+			echo "There was an error adding your review. Please try again later.";
+                        logger($errMsg);
 		}
 		else
 		{
-			$errMsg= "Error: " . $query . "<br>" . mysqli_error($con) . "\n";
-			echo "There was an error adding your review. Please try again later.";
-			logger($errMsg);
+			echo "Your review has been added. Thank you. \n";
 		}
 	}
 
@@ -236,10 +276,10 @@ require_once('rabbitMQLib.inc');
 		return $searchRes;
 	}
 
-	function viewDoc($email, $con) 
+	function viewDoc($user, $con) 
 	{
 		//I think it's better if we use license number as the unique key for doctors since in rare cases doctors can have the same names -ben
-		$query="SELECT firstName,lastName,specialization,rating,review,email,phone,location FROM Doctors WHERE license='$email';";
+		$query="SELECT firstName,lastName,license,gender,specialization,rating,review,email,phone,location FROM Doctors WHERE username='$user';";
 		$viewRes=array();
 		$result=mysqli_query($con,$query);
 		if(!$result)
@@ -249,12 +289,8 @@ require_once('rabbitMQLib.inc');
 			logger($errMsg);
 		}
 		
-		while($row=mysqli_fetch_assoc($result))
-		{
-			$viewRes[]=$row;
-		}
-		//print_r($viewRes);
-		return $viewRes;
+		$row=mysqli_fetch_assoc($result);
+		return $row;
 	}
 	
 	function updateRecords($accType, $sVar, $changeCol, $changeVal)
@@ -286,20 +322,24 @@ require_once('rabbitMQLib.inc');
 	
 	function logger($logMsg) //todo: make this concat the file 
 	{
-		$file = fopen("log.txt","a") or die ("error writing to log");//opens the error log file for writing
-		$time= date('m/d/Y h:i:s a', time());
-		$fmsg= "" . $time . ": " . $logMsg . "\n";
-		fwrite($file, $fmsg);//writes the error into the log file
-		fclose($file);//closes the file
+                $file = fopen("log.txt","a") or die ("error writing to log");//opens the error log file for writing
+                $time= date('m/d/Y h:i:s a', time());
+                $fmsg= "" . $time . ": " . $logMsg . "\n";
+                fwrite($file, $fmsg);//writes the error into the log file
+                fclose($file);//closes the file
 	}
 	
 	function viewPatInfo($user, $con)
 	{
-		$q="SELECT fName,lName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='$user';";
+		echo  "\na".$user."b you have the satans motherfucker\n";
+		//$q="SELECT firstName,lastName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='$user';";
+		//remove pass from patient and doctor tables;
+		$q="select firstName,lastName,email,age,height,weight,sex,diagnosis,drNote,doctor,prescription FROM patientRecords WHERE username='$user';";
 		$query=mysqli_query($con, $q);
 		if(!$query)
 		{
 			$errMsg= "Query failure." . $q . "<br>" . mysqli_error($con);
+			echo $errMsg;
 			echo "Failed to connect. Contact support.";
 			logger($errMsg);
 		}
@@ -309,9 +349,10 @@ require_once('rabbitMQLib.inc');
 			$retArr[]=$row;
 		}*/
 		//$retArr[]=mysqli_fetch_row($query);
-		echo "VPI dump";
-		$row=mysqli_fetch_assoc($query);
-		return $row;
+		
+		$r=mysqli_fetch_assoc($query);
+		var_dump($r);
+		return $r;
 	}	
 
 	function rateDoctor($email, $rating, $con)
