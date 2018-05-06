@@ -1,5 +1,4 @@
 <?php
-require_once('dbVar.php');
 require_once('rabbitMQLib.inc');
 
 	
@@ -131,30 +130,49 @@ require_once('rabbitMQLib.inc');
 		}
 
 		$r=mysqli_fetch_assoc($query);
+		if(!isset($r['type']))
+			return "2";
 		var_dump($r);
 		$blah=$r['type'];
 		$userID=$r['user'];
 		echo $userID;
 		$arr=array("0"=>$blah, "userID"=>$userID);
-		echo "ARRAY VARDUMP SHOULD BE HERE \n";
-		var_dump($arr);
-		echo "ARRAY VARDUMP SHOULD BE ABOVE \n";
-		
 		return $arr;
 	}
 
-	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $rating, $review, $email,$phone, $location, $con)
+	function addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $special, $email,$phone, $location, $con)
 	{
 		$name= $firstName . " " . $lastName;
-		$query= "INSERT INTO Doctors (username, password, license, firstName, lastName, name, gender, specialization, rating, review, email, phone, location) VALUES ($user, '$pass', $license, '$firstName','$lastName', '$name', '$gender', '$special', '$rating', '$review', '$email', $phone, '$location');";
-		
-		$q=mysqli_query($con,$query);
-		if(!$q) 
+		$q= "INSERT INTO uAuth (user, pass, type, login, failedLog) VALUES ('$user', '$pass', 'd', 0, 0);";
+		$query=mysqli_query($con,$q);
+ 		
+		if(!$query)
 		{
-			$errMsg = " connection failure". $query . "<br>". mysqli_error($con);
+			$errMsg= "Doctor registration step1 failed: " . mysqli_error($con);
+			echo $errMsg;
+			logger($errMsg);
+			return false; 
+		}
+		$q= "INSERT INTO Doctors (username, password, license, firstName, lastName, name, gender, specialization, rating, review, email, phone, location) VALUES ('$user', '$pass', $license, '$firstName','$lastName', '$name', '$gender', '$special', 0, '', '$email', $phone, '$location');";
+		
+		$query=mysqli_query($con,$q);
+		if(!$query) 
+		{
+			$errMsg = " Doctor registration failed step2 ".  "<br>". mysqli_error($con);
 			echo $errMsg;//prints to console the error
 			logger($errMsg);
+			$q= "DELETE FROM uAuth WHERE user='$user';";
+			$query=mysqli_query($con,$q);
+			if(!$query)
+			{
+				$errMsg="Error deleting from uAuth" . mysqli_error($con);
+				echo "\n" . $errMsg . "\n";
+				logger($errMsg);
+			}
+			return false;
 		}
+		else
+			return true;
 	}
 
 	function addPatient($user, $pass, $email, $firstName, $lastName, $age, $height, $weight, $sex, $diagnosis, $address, $con)
@@ -253,26 +271,33 @@ require_once('rabbitMQLib.inc');
 			//return $records;
 	}
 	
-	function docSearch($sType, $sText, $con) 
+	function docSearch($sType, $sVar, $con) 
 	{
-		$q="SELECT name,$sType FROM Doctors WHERE $sType='$sText'";
-		$query=mysqli_connect($con, $q);
+		if($sType="byName")
+			$q="select firstName,lastName,specialization, phone,email,location,gender,rating,review from Doctors where lastName='$sVar';";
+	//first name, last name, specialization, telephone, email, address, gender, rating, review, 
+		elseif($sType="bySpec")
+			$q="select firstName,lastName,specialization, phone,email,location,gender,rating,review from Doctors where specialization='$sVar';"; 
+		else
+			{
+				$errMsg="Incorrect doctor search type\n";
+				echo $errMsg;
+				logger($errMsg);
+				return $errMsg;
+			}
+		var_dump($con);
+		$query=mysqli_query($con, $q);
 		
+		//byName= 
+		//bySpec= 
+		//	
 		if(!$query)
 		{
-			$errMsg = "Query failure." . $query . "<br>" . mysqli_error($con);
-                        echo "Failed to find any results. Try another search?";//prints to console the error
-                        $file = fopen("$errLog","w");//opens the error log file for writing
-                        fwrite($file, $errmsg);//writes the error into the log file
-                        fclose($file);//closes the file
+			$errMsg = "\nDoctor search Query failure." . $query . "<br>" . mysqli_error($con);
+                        echo $errMsg . "\n";//prints to console the error
+			logger($errMsg); 
 		}
-		$searchRes=array();
-		
-		while($row=mysqli_fetch_assoc($query))
-		{
-			$searchRes[]=$row;
-		}
-		
+		$searchRes=mysqli_fetch_assoc($query);
 		return $searchRes;
 	}
 

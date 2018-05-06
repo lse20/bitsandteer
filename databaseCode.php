@@ -14,7 +14,6 @@
 		logger("receiving rabbit message");
 		$Function = $response['function'];	 
 		
-		$dbResults=array();
 		
 		logger("establishing database connection");
 		$testCon=mysqli_connect("127.0.0.1", "root","toor","it490"); //create a connection to the database. in the real version
@@ -67,7 +66,8 @@
 				$email=$response['email'];
 				$phone=$response['telNo'];
 				$location=$response['address'];
-				addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $email, $phone, $location, $testCon);	
+				$dbResults=addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $email, $phone, $location, $testCon);	
+				return $dbResults;
 				break;
 
 			case "pRegister":
@@ -98,12 +98,23 @@
 			case "viewDoc":
 				viewDoc($firstName, $lastName, $testCon);
 				break;
+			
+			case "docSearch":
+				$searchVar=$response['searchVar'];
+				$searchType=$response['searchType'];
+				$dbResults=docSearch($searchType ,$searchVar , $testCon);
+				break;
 
 			case "displayPatient":
 				$user=$response['username'];
 				$dbResults=viewPatInfo($user,$testCon);
 				break;
 			
+			case "docRate":
+				$user=$response['username'];
+				return true;
+				break;
+	
 			case "error":
 				$err=$response['log'];
 				$ferr= "error:" . $err;
@@ -111,13 +122,13 @@
 				break;
 
 		}
-		//var_dump($dbResults);
+		var_dump($dbResults);
 		logger("responding and closing function \n\n");
 		if (($Function!='error') )
 			return $dbResults;
 	}
 			
-	$server = new rabbitMQServer("testRabbitMQ.ini", "Login_T_DB");
+	$server = new rabbitMQServer("testRabbitMQ.ini", "testServer");
 	$server->process_requests('dbRequest');
 
 
