@@ -1,0 +1,17 @@
+● dbListen.service - database's listener service
+   Loaded: loaded (/etc/systemd/system/dbListen.service; enabled; vendor preset: enabled)
+   Active: active (running) since Sun 2018-05-06 16:31:12 EDT; 4min 4s ago
+ Main PID: 9144 (php)
+   CGroup: /system.slice/dbListen.service
+           └─9144 /usr/bin/php -f /home/lou/working/databaseCode.php
+
+May 06 16:34:54 lou-VirtualBox php[9144]:   ["function"]=>
+May 06 16:34:54 lou-VirtualBox php[9144]:   string(9) "pRegister"
+May 06 16:34:54 lou-VirtualBox php[9144]: }
+May 06 16:34:54 lou-VirtualBox php[9144]: hi
+May 06 16:34:54 lou-VirtualBox php[9144]: INSERT INTO patientRecords (username, password, firstName, lastName, name, email , age, height, weight, sex, diagnosis, drNote, doctor, prescription, address) VALUES ('12', '12', 'Benny', 'Ro', 'Benny Ro', 'bl233@njit.edu', 24, '156', '156', 'm', 'Eczma', '', 0, '', '156 Bleeker St., Newark NJ, 07102');
+May 06 16:34:54 lou-VirtualBox php[9144]: string(166) "connection failureYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 "
+May 06 16:34:54 lou-VirtualBox php[9144]: array(1) {
+May 06 16:34:54 lou-VirtualBox php[9144]:   [0]=>
+May 06 16:34:54 lou-VirtualBox php[9144]:   bool(false)
+May 06 16:34:54 lou-VirtualBox php[9144]: }

@@ -1,686 +1,1380 @@
-
-04/16/2018 04:55:18 pm: receiving rabbit message
-04/16/2018 04:55:18 pm: establishing database connection
-04/16/2018 04:55:18 pm: responding and closing function 
-
-
-04/16/2018 04:55:19 pm: receiving rabbit message
-04/16/2018 04:55:19 pm: establishing database connection
-04/16/2018 04:55:19 pm: responding and closing function 
-
-
-04/16/2018 04:55:28 pm: receiving rabbit message
-04/16/2018 04:55:28 pm: establishing database connection
-04/16/2018 04:55:28 pm: responding and closing function 
-
-
-04/16/2018 04:55:28 pm: receiving rabbit message
-04/16/2018 04:55:28 pm: establishing database connection
-04/16/2018 04:55:28 pm: responding and closing function 
-
-
-04/16/2018 04:57:20 pm: receiving rabbit message
-04/16/2018 04:57:20 pm: establishing database connection
-04/16/2018 04:57:20 pm: responding and closing function 
-
-
-04/16/2018 04:57:20 pm: receiving rabbit message
-04/16/2018 04:57:20 pm: establishing database connection
-04/16/2018 04:57:20 pm: responding and closing function 
-
-
-04/16/2018 05:00:53 pm: receiving rabbit message
-04/16/2018 05:00:53 pm: establishing database connection
-04/16/2018 05:00:53 pm: responding and closing function 
-
-
-04/16/2018 05:00:53 pm: receiving rabbit message
-04/16/2018 05:00:53 pm: establishing database connection
-04/16/2018 05:00:53 pm: responding and closing function 
-
-
-04/16/2018 05:06:51 pm: receiving rabbit message
-04/16/2018 05:06:51 pm: establishing database connection
-04/16/2018 05:06:52 pm: responding and closing function 
-
-
-04/16/2018 05:06:52 pm: receiving rabbit message
-04/16/2018 05:06:52 pm: establishing database connection
-04/16/2018 05:06:52 pm: responding and closing function 
-
-
-04/16/2018 05:55:01 pm: receiving rabbit message
-04/16/2018 05:55:01 pm: establishing database connection
-04/16/2018 05:55:01 pm: responding and closing function 
-
-
-04/16/2018 05:55:01 pm: receiving rabbit message
-04/16/2018 05:55:01 pm: establishing database connection
-04/16/2018 05:55:01 pm: responding and closing function 
-
-
-04/16/2018 05:55:22 pm: receiving rabbit message
-04/16/2018 05:55:22 pm: establishing database connection
-04/16/2018 05:55:22 pm: responding and closing function 
-
-
-04/16/2018 05:55:22 pm: receiving rabbit message
-04/16/2018 05:55:22 pm: establishing database connection
-04/16/2018 05:55:22 pm: responding and closing function 
-
-
-04/16/2018 06:00:10 pm: receiving rabbit message
-04/16/2018 06:00:10 pm: establishing database connection
-04/16/2018 06:00:10 pm: responding and closing function 
-
-
-04/16/2018 06:00:10 pm: receiving rabbit message
-04/16/2018 06:00:10 pm: establishing database connection
-04/16/2018 06:00:10 pm: responding and closing function 
-
-
-04/16/2018 06:02:27 pm: receiving rabbit message
-04/16/2018 06:02:27 pm: establishing database connection
-04/16/2018 06:02:27 pm: responding and closing function 
-
-
-04/16/2018 06:02:27 pm: receiving rabbit message
-04/16/2018 06:02:27 pm: establishing database connection
-04/16/2018 06:02:27 pm: responding and closing function 
-
-
-04/16/2018 06:02:45 pm: receiving rabbit message
-04/16/2018 06:02:45 pm: establishing database connection
-04/16/2018 06:02:45 pm: responding and closing function 
-
-
-04/16/2018 06:02:45 pm: receiving rabbit message
-04/16/2018 06:02:45 pm: establishing database connection
-04/16/2018 06:02:45 pm: responding and closing function 
-
-
-04/16/2018 06:07:40 pm: receiving rabbit message
-04/16/2018 06:07:40 pm: establishing database connection
-04/16/2018 06:07:40 pm: responding and closing function 
-
-
-04/16/2018 06:07:40 pm: receiving rabbit message
-04/16/2018 06:07:40 pm: establishing database connection
-04/16/2018 06:07:40 pm: responding and closing function 
-
-
-04/16/2018 06:08:03 pm: receiving rabbit message
-04/16/2018 06:08:03 pm: establishing database connection
-04/16/2018 06:08:03 pm: responding and closing function 
-
-
-04/16/2018 06:08:03 pm: receiving rabbit message
-04/16/2018 06:08:03 pm: establishing database connection
-04/16/2018 06:08:03 pm: responding and closing function 
-
-
-04/16/2018 06:09:58 pm: receiving rabbit message
-04/16/2018 06:09:58 pm: establishing database connection
-04/16/2018 06:09:58 pm: responding and closing function 
-
-
-04/16/2018 06:09:58 pm: receiving rabbit message
-04/16/2018 06:09:58 pm: establishing database connection
-04/16/2018 06:09:58 pm: responding and closing function 
-
-
-04/16/2018 06:11:00 pm: receiving rabbit message
-04/16/2018 06:11:00 pm: establishing database connection
-04/16/2018 06:11:00 pm: responding and closing function 
-
-
-04/16/2018 06:11:00 pm: receiving rabbit message
-04/16/2018 06:11:00 pm: establishing database connection
-04/16/2018 06:11:00 pm: responding and closing function 
-
-
-04/16/2018 06:16:14 pm: receiving rabbit message
-04/16/2018 06:16:14 pm: establishing database connection
-04/16/2018 06:16:14 pm: responding and closing function 
-
-
-04/16/2018 06:16:19 pm: receiving rabbit message
-04/16/2018 06:16:19 pm: establishing database connection
-04/16/2018 06:16:19 pm: responding and closing function 
-
-
-04/16/2018 06:16:19 pm: receiving rabbit message
-04/16/2018 06:16:19 pm: establishing database connection
-04/16/2018 06:16:19 pm: responding and closing function 
-
-
-04/16/2018 06:19:57 pm: receiving rabbit message
-04/16/2018 06:19:57 pm: establishing database connection
-04/16/2018 06:19:57 pm:  Login attempt for user: ben 
-04/16/2018 06:19:57 pm:  login failure: incorrect credentials 
-04/16/2018 06:19:57 pm: responding and closing function 
-
-
-04/16/2018 06:24:57 pm: receiving rabbit message
-04/16/2018 06:24:57 pm: establishing database connection
-04/16/2018 06:24:57 pm:  Login attempt for user: ben 
-04/16/2018 06:24:57 pm:  login failure: incorrect credentials 
-04/16/2018 06:24:57 pm: responding and closing function 
-
-
-04/16/2018 06:36:25 pm: receiving rabbit message
-04/16/2018 06:36:25 pm: establishing database connection
-04/16/2018 06:36:25 pm: connection failureINSERT INTO patientRecords (username, password, firstName, lastName, name, email , age, height, weight, sex, diagnosis, drNote, doctor, prescription, address) VALUES ('', '', '', '', ' ', '', , '', '', '', '', '', 0, '', '');<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' '', '', '', '', '', 0, '', '')' at line 1
-04/16/2018 06:36:25 pm: responding and closing function 
-
-
-04/16/2018 06:37:10 pm: receiving rabbit message
-04/16/2018 06:37:10 pm: establishing database connection
-04/16/2018 06:37:10 pm:  adding to uAuth error<br>
-04/16/2018 06:37:10 pm: responding and closing function 
-
-
-04/16/2018 06:38:48 pm: receiving rabbit message
-04/16/2018 06:38:48 pm: establishing database connection
-04/16/2018 06:38:48 pm:  adding to uAuth error<br>Unknown column 'username' in 'field list'
-04/16/2018 06:38:48 pm: responding and closing function 
-
-
-04/16/2018 06:43:24 pm: receiving rabbit message
-04/16/2018 06:43:24 pm: establishing database connection
-04/16/2018 06:43:24 pm: responding and closing function 
-
-
-04/16/2018 06:46:00 pm: receiving rabbit message
-04/16/2018 06:46:00 pm: establishing database connection
-04/16/2018 06:46:00 pm:  Login attempt for user: ben 
-04/16/2018 06:46:01 pm:  login failure: incorrect credentials 
-04/16/2018 06:46:01 pm: responding and closing function 
-
-
-04/16/2018 06:48:48 pm: receiving rabbit message
-04/16/2018 06:48:48 pm: establishing database connection
-04/16/2018 06:48:48 pm:  Login attempt for user: ben 
-04/16/2018 06:48:48 pm:  login failure: incorrect credentials 
-04/16/2018 06:48:48 pm: responding and closing function 
-
-
-04/16/2018 06:52:22 pm: receiving rabbit message
-04/16/2018 06:52:22 pm: establishing database connection
-04/16/2018 06:52:22 pm:  Login attempt for user: ben 
-04/16/2018 06:52:22 pm:  login failure: incorrect credentials 
-04/16/2018 06:52:22 pm: responding and closing function 
-
-
-04/16/2018 06:54:21 pm: receiving rabbit message
-04/16/2018 06:54:21 pm: establishing database connection
-04/16/2018 06:54:21 pm:  Login attempt for user: ben 
-04/16/2018 06:54:21 pm:  login failure: 
-04/16/2018 06:54:21 pm: responding and closing function 
-
-
-04/16/2018 06:56:10 pm: receiving rabbit message
-04/16/2018 06:56:10 pm: establishing database connection
-04/16/2018 06:56:10 pm:  Login attempt for user: ben 
-04/16/2018 06:58:34 pm: receiving rabbit message
-04/16/2018 06:58:34 pm: establishing database connection
-04/16/2018 06:58:34 pm:  Login attempt for user: ben 
-04/16/2018 07:03:29 pm: receiving rabbit message
-04/16/2018 07:03:29 pm: establishing database connection
-04/16/2018 07:03:29 pm:  Login attempt for user: ben 
-04/16/2018 07:03:29 pm: responding and closing function 
-
-
-04/16/2018 07:05:40 pm: receiving rabbit message
-04/16/2018 07:05:40 pm: establishing database connection
-04/16/2018 07:05:40 pm:  Login attempt for user: ben 
-04/16/2018 07:05:40 pm: responding and closing function 
-
-
-04/16/2018 07:07:00 pm: receiving rabbit message
-04/16/2018 07:07:00 pm: establishing database connection
-04/16/2018 07:07:00 pm:  Login attempt for user: ben 
-04/16/2018 07:07:00 pm: responding and closing function 
-
-
-04/16/2018 07:07:00 pm: receiving rabbit message
-04/16/2018 07:07:00 pm: establishing database connection
-04/16/2018 07:07:00 pm: responding and closing function 
-
-
-04/16/2018 07:10:25 pm: receiving rabbit message
-04/16/2018 07:10:25 pm: establishing database connection
-04/16/2018 07:10:25 pm:  Login attempt for user: ben 
-04/16/2018 07:10:25 pm: responding and closing function 
-
-
-04/16/2018 07:10:25 pm: receiving rabbit message
-04/16/2018 07:10:25 pm: establishing database connection
-04/16/2018 07:10:25 pm: responding and closing function 
-
-
-04/16/2018 07:31:01 pm: receiving rabbit message
-04/16/2018 07:31:01 pm: establishing database connection
-04/16/2018 07:31:01 pm:  Login attempt for user: ben 
-04/16/2018 07:31:01 pm: responding and closing function 
-
-
-04/16/2018 07:31:31 pm: receiving rabbit message
-04/16/2018 07:31:31 pm: establishing database connection
-04/16/2018 07:31:31 pm: connection failure<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
-04/16/2018 07:31:31 pm: responding and closing function 
-
-
-04/16/2018 07:32:09 pm: receiving rabbit message
-04/16/2018 07:32:09 pm: establishing database connection
-04/16/2018 07:32:09 pm:  Login attempt for user: 1 
-04/16/2018 07:32:09 pm: responding and closing function 
-
-
-04/16/2018 07:33:33 pm: receiving rabbit message
-04/16/2018 07:33:33 pm: establishing database connection
-04/16/2018 07:33:33 pm:  Login attempt for user: 1 
-04/16/2018 07:33:33 pm: responding and closing function 
-
-
-04/16/2018 07:35:56 pm: receiving rabbit message
-04/16/2018 07:35:56 pm: establishing database connection
-04/16/2018 07:35:56 pm:  Login attempt for user: 1 
-04/16/2018 07:35:56 pm: responding and closing function 
-
-
-04/16/2018 07:35:56 pm: receiving rabbit message
-04/16/2018 07:35:56 pm: establishing database connection
-04/16/2018 07:35:56 pm: responding and closing function 
-
-
-04/16/2018 07:40:11 pm: receiving rabbit message
-04/16/2018 07:40:11 pm: establishing database connection
-04/16/2018 07:40:11 pm:  Login attempt for user: 1 
-04/16/2018 07:40:11 pm: responding and closing function 
-
-
-04/16/2018 07:40:11 pm: receiving rabbit message
-04/16/2018 07:40:11 pm: establishing database connection
-04/16/2018 07:40:11 pm: Query failure.select * from patientRecords where user='
-  1
- '<br>Unknown column 'user' in 'where clause'
-04/16/2018 07:40:11 pm: responding and closing function 
-
-
-04/16/2018 07:40:47 pm: receiving rabbit message
-04/16/2018 07:40:47 pm: establishing database connection
-04/16/2018 07:40:47 pm:  Login attempt for user: 1 
-04/16/2018 07:40:47 pm: responding and closing function 
-
-
-04/16/2018 07:40:47 pm: receiving rabbit message
-04/16/2018 07:40:47 pm: establishing database connection
-04/16/2018 07:40:47 pm: responding and closing function 
-
-
-04/16/2018 07:42:11 pm: receiving rabbit message
-04/16/2018 07:42:11 pm: establishing database connection
-04/16/2018 07:42:11 pm:  Login attempt for user: 1 
-04/16/2018 07:42:11 pm: responding and closing function 
-
-
-04/16/2018 07:42:11 pm: receiving rabbit message
-04/16/2018 07:42:11 pm: establishing database connection
-04/16/2018 07:42:11 pm: responding and closing function 
-
-
-04/16/2018 07:46:47 pm: receiving rabbit message
-04/16/2018 07:46:47 pm: establishing database connection
-04/16/2018 07:46:47 pm:  Login attempt for user: 1 
-04/16/2018 07:46:47 pm: responding and closing function 
-
-
-04/16/2018 07:46:47 pm: receiving rabbit message
-04/16/2018 07:46:47 pm: establishing database connection
-04/16/2018 07:46:47 pm: responding and closing function 
-
-
-04/16/2018 07:47:30 pm: receiving rabbit message
-04/16/2018 07:47:30 pm: establishing database connection
-04/16/2018 07:47:30 pm:  Login attempt for user: 1 
-04/16/2018 07:47:30 pm: responding and closing function 
-
-
-04/16/2018 07:47:31 pm: receiving rabbit message
-04/16/2018 07:47:31 pm: establishing database connection
-04/16/2018 07:47:31 pm: responding and closing function 
-
-
-04/16/2018 07:50:01 pm: receiving rabbit message
-04/16/2018 07:50:01 pm: establishing database connection
-04/16/2018 07:50:01 pm:  Login attempt for user: 1 
-04/16/2018 07:50:01 pm: responding and closing function 
-
-
-04/16/2018 07:50:01 pm: receiving rabbit message
-04/16/2018 07:50:01 pm: establishing database connection
-04/16/2018 07:50:01 pm: responding and closing function 
-
-
-04/16/2018 07:50:34 pm: receiving rabbit message
-04/16/2018 07:50:34 pm: establishing database connection
-04/16/2018 07:50:34 pm:  Login attempt for user: 1 
-04/16/2018 07:50:34 pm: responding and closing function 
-
-
-04/16/2018 07:50:34 pm: receiving rabbit message
-04/16/2018 07:50:34 pm: establishing database connection
-04/16/2018 07:50:34 pm: responding and closing function 
-
-
-04/16/2018 07:53:51 pm: receiving rabbit message
-04/16/2018 07:53:51 pm: establishing database connection
-04/16/2018 07:53:51 pm:  Login attempt for user: ben 
-04/16/2018 07:53:51 pm: responding and closing function 
-
-
-04/16/2018 07:53:51 pm: receiving rabbit message
-04/16/2018 07:53:51 pm: establishing database connection
-04/16/2018 07:53:51 pm: responding and closing function 
-
-
-04/16/2018 08:07:03 pm: receiving rabbit message
-04/16/2018 08:07:03 pm: establishing database connection
-04/16/2018 08:07:03 pm:  Login attempt for user: ben 
-04/16/2018 08:07:03 pm: responding and closing function 
-
-
-04/16/2018 08:07:04 pm: receiving rabbit message
-04/16/2018 08:07:04 pm: establishing database connection
-04/16/2018 08:07:04 pm: responding and closing function 
-
-
-04/16/2018 08:07:28 pm: receiving rabbit message
-04/16/2018 08:07:28 pm: establishing database connection
-04/16/2018 08:07:28 pm:  Login attempt for user: 1 
-04/16/2018 08:07:28 pm: responding and closing function 
-
-
-04/16/2018 08:07:28 pm: receiving rabbit message
-04/16/2018 08:07:28 pm: establishing database connection
-04/16/2018 08:07:28 pm: responding and closing function 
-
-
-04/16/2018 08:07:52 pm: receiving rabbit message
-04/16/2018 08:07:52 pm: establishing database connection
-04/16/2018 08:07:52 pm:  Login attempt for user: ben 
-04/16/2018 08:07:52 pm: responding and closing function 
-
-
-04/16/2018 08:07:52 pm: receiving rabbit message
-04/16/2018 08:07:52 pm: establishing database connection
-04/16/2018 08:07:52 pm: responding and closing function 
-
-
-04/16/2018 08:08:03 pm: receiving rabbit message
-04/16/2018 08:08:03 pm: establishing database connection
-04/16/2018 08:08:03 pm:  Login attempt for user: 1 
-04/16/2018 08:08:03 pm: responding and closing function 
-
-
-04/16/2018 08:08:03 pm: receiving rabbit message
-04/16/2018 08:08:03 pm: establishing database connection
-04/16/2018 08:08:03 pm: responding and closing function 
-
-
-04/16/2018 08:10:28 pm: receiving rabbit message
-04/16/2018 08:10:28 pm: establishing database connection
-04/16/2018 08:10:28 pm:  Login attempt for user: 1 
-04/16/2018 08:10:28 pm: responding and closing function 
-
-
-04/16/2018 08:10:28 pm: receiving rabbit message
-04/16/2018 08:10:28 pm: establishing database connection
-04/16/2018 08:10:28 pm: responding and closing function 
-
-
-04/16/2018 08:16:18 pm: receiving rabbit message
-04/16/2018 08:16:18 pm: establishing database connection
-04/16/2018 08:16:18 pm: responding and closing function 
-
-
-04/16/2018 08:16:18 pm: receiving rabbit message
-04/16/2018 08:16:18 pm: establishing database connection
-04/16/2018 08:16:18 pm: responding and closing function 
-
-
-04/19/2018 03:21:59 pm: receiving rabbit message
-04/19/2018 03:21:59 pm: establishing database connection
-04/19/2018 03:21:59 pm:  Login attempt for user: rich 
-04/19/2018 03:21:59 pm: responding and closing function 
-
-
-04/19/2018 03:21:59 pm: receiving rabbit message
-04/19/2018 03:21:59 pm: establishing database connection
-04/19/2018 03:21:59 pm:  Login attempt for user: rich 
-04/19/2018 03:21:59 pm: responding and closing function 
-
-
-04/19/2018 03:22:00 pm: receiving rabbit message
-04/19/2018 03:22:00 pm: establishing database connection
-04/19/2018 03:22:00 pm:  Login attempt for user: 1 
-04/19/2018 03:22:00 pm: responding and closing function 
-
-
-04/19/2018 03:22:07 pm: receiving rabbit message
-04/19/2018 03:22:07 pm: establishing database connection
-04/19/2018 03:22:07 pm:  Login attempt for user: 1 
-04/19/2018 03:22:07 pm: responding and closing function 
-
-
-04/19/2018 03:22:07 pm: receiving rabbit message
-04/19/2018 03:22:07 pm: establishing database connection
-04/19/2018 03:22:07 pm: responding and closing function 
-
-
-04/19/2018 03:22:20 pm: receiving rabbit message
-04/19/2018 03:22:20 pm: establishing database connection
-04/19/2018 03:22:20 pm:  Login attempt for user: rich 
-04/19/2018 03:22:20 pm: responding and closing function 
-
-
-04/19/2018 03:28:35 pm: receiving rabbit message
-04/19/2018 03:28:35 pm: establishing database connection
-04/19/2018 03:28:35 pm:  Login attempt for user: rich 
-04/19/2018 03:28:35 pm: responding and closing function 
-
-
-04/19/2018 03:31:20 pm: receiving rabbit message
-04/19/2018 03:31:20 pm: establishing database connection
-04/19/2018 03:31:20 pm:  Login attempt for user: rich 
-04/19/2018 03:31:20 pm: responding and closing function 
-
-
-04/19/2018 03:31:20 pm: receiving rabbit message
-04/19/2018 03:31:20 pm: establishing database connection
-04/19/2018 03:41:32 pm: receiving rabbit message
-04/19/2018 03:41:32 pm: establishing database connection
-04/19/2018 03:41:32 pm:  Login attempt for user: rich 
-04/19/2018 03:41:32 pm: responding and closing function 
-
-
-04/19/2018 03:41:32 pm: receiving rabbit message
-04/19/2018 03:41:32 pm: establishing database connection
-04/19/2018 03:50:45 pm: receiving rabbit message
-04/19/2018 03:50:45 pm: establishing database connection
-04/19/2018 03:50:45 pm:  Login attempt for user: rich 
-04/19/2018 03:50:45 pm: responding and closing function 
-
-
-04/19/2018 03:50:45 pm: receiving rabbit message
-04/19/2018 03:50:45 pm: establishing database connection
-04/19/2018 03:50:45 pm: responding and closing function 
-
-
-04/19/2018 04:00:46 pm: receiving rabbit message
-04/19/2018 04:00:46 pm: establishing database connection
-04/19/2018 04:00:46 pm:  Login attempt for user: rich 
-04/19/2018 04:00:46 pm: responding and closing function 
-
-
-04/19/2018 04:00:46 pm: receiving rabbit message
-04/19/2018 04:00:46 pm: establishing database connection
-04/19/2018 04:00:46 pm: responding and closing function 
-
-
-04/19/2018 04:06:36 pm: receiving rabbit message
-04/19/2018 04:06:36 pm: establishing database connection
-04/19/2018 04:06:36 pm:  Login attempt for user: rich 
-04/19/2018 04:06:36 pm: responding and closing function 
-
-
-04/19/2018 04:07:11 pm: receiving rabbit message
-04/19/2018 04:07:11 pm: establishing database connection
-04/19/2018 04:07:11 pm:  Login attempt for user: rich 
-04/19/2018 04:07:11 pm: responding and closing function 
-
-
-04/19/2018 04:07:12 pm: receiving rabbit message
-04/19/2018 04:07:12 pm: establishing database connection
-04/19/2018 04:07:12 pm: responding and closing function 
-
-
-04/19/2018 04:09:06 pm: receiving rabbit message
-04/19/2018 04:09:06 pm: establishing database connection
-04/19/2018 04:09:06 pm:  Login attempt for user: rich 
-04/19/2018 04:09:06 pm: responding and closing function 
-
-
-04/19/2018 04:09:06 pm: receiving rabbit message
-04/19/2018 04:09:06 pm: establishing database connection
-04/19/2018 04:09:06 pm: responding and closing function 
-
-
-04/19/2018 04:09:21 pm: receiving rabbit message
-04/19/2018 04:09:21 pm: establishing database connection
-04/19/2018 04:09:21 pm:  Login attempt for user: 1 
-04/19/2018 04:09:21 pm: responding and closing function 
-
-
-04/19/2018 04:09:21 pm: receiving rabbit message
-04/19/2018 04:09:21 pm: establishing database connection
-04/19/2018 04:09:21 pm: responding and closing function 
-
-
-04/19/2018 04:09:56 pm: receiving rabbit message
-04/19/2018 04:09:56 pm: establishing database connection
-04/19/2018 04:09:56 pm: responding and closing function 
-
-
-04/19/2018 04:09:56 pm: receiving rabbit message
-04/19/2018 04:09:56 pm: establishing database connection
-04/19/2018 04:09:56 pm: responding and closing function 
-
-
-04/19/2018 04:10:54 pm: receiving rabbit message
-04/19/2018 04:10:54 pm: establishing database connection
-04/19/2018 04:10:54 pm: Error: UPDATE Doctors SET review= CONCAT(review,'He's a lolicon') WHERE license='';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a lolicon') WHERE license=''' at line 1
-
-04/19/2018 04:10:54 pm: responding and closing function 
-
-
-04/19/2018 04:10:54 pm: receiving rabbit message
-04/19/2018 04:10:54 pm: establishing database connection
-04/19/2018 04:10:54 pm: responding and closing function 
-
-
-04/19/2018 04:12:40 pm: receiving rabbit message
-04/19/2018 04:12:40 pm: establishing database connection
-04/19/2018 04:12:40 pm: Error: UPDATE Doctors SET review= CONCAT(review,'He's a lolicon') WHERE license='';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a lolicon') WHERE license=''' at line 1
-
-04/19/2018 04:12:40 pm: responding and closing function 
-
-
-04/19/2018 04:12:40 pm: receiving rabbit message
-04/19/2018 04:12:40 pm: establishing database connection
-04/19/2018 04:12:40 pm: responding and closing function 
-
-
-04/19/2018 04:14:29 pm: receiving rabbit message
-04/19/2018 04:14:29 pm: establishing database connection
-04/19/2018 04:14:29 pm: Error: UPDATE Doctors SET review= CONCAT(review,'He's a lolicon') WHERE license='';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a lolicon') WHERE license=''' at line 1
-
-04/19/2018 04:14:29 pm: responding and closing function 
-
-
-04/19/2018 04:14:29 pm: receiving rabbit message
-04/19/2018 04:14:29 pm: establishing database connection
-04/19/2018 04:14:29 pm: responding and closing function 
-
-
-04/19/2018 04:15:28 pm: receiving rabbit message
-04/19/2018 04:15:28 pm: establishing database connection
-04/19/2018 04:15:28 pm: Error: UPDATE Doctors SET review= CONCAT(review,'He's a lolicon') WHERE license='12345678';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a lolicon') WHERE license='12345678'' at line 1
-
-04/19/2018 04:15:28 pm: responding and closing function 
-
-
-04/19/2018 04:15:28 pm: receiving rabbit message
-04/19/2018 04:15:28 pm: establishing database connection
-04/19/2018 04:15:28 pm: responding and closing function 
-
-
-04/19/2018 04:23:19 pm: receiving rabbit message
-04/19/2018 04:23:19 pm: establishing database connection
-04/19/2018 04:23:19 pm: Error: <br>
-
-04/19/2018 04:23:19 pm: responding and closing function 
-
-
-04/19/2018 04:23:19 pm: receiving rabbit message
-04/19/2018 04:23:19 pm: establishing database connection
-04/19/2018 04:23:19 pm: responding and closing function 
-
-
-04/19/2018 04:24:27 pm: receiving rabbit message
-04/19/2018 04:24:27 pm: establishing database connection
-04/19/2018 04:24:27 pm: Error: <br>
-
-04/19/2018 04:24:27 pm: responding and closing function 
-
-
-04/19/2018 04:24:28 pm: receiving rabbit message
-04/19/2018 04:24:28 pm: establishing database connection
-04/19/2018 04:24:28 pm: responding and closing function 
-
-
-04/19/2018 04:25:54 pm: receiving rabbit message
-04/19/2018 04:25:54 pm: establishing database connection
-04/19/2018 04:25:54 pm: Error: UPDATE Doctors SET review= CONCAT(review,'He's a lolicon') WHERE license='12345678';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a lolicon') WHERE license='12345678'' at line 1
-
-04/19/2018 04:25:54 pm: responding and closing function 
-
-
-04/19/2018 04:25:54 pm: receiving rabbit message
-04/19/2018 04:25:54 pm: establishing database connection
-04/19/2018 04:25:54 pm: responding and closing function 
-
-
-04/19/2018 04:31:17 pm: receiving rabbit message
-04/19/2018 04:31:17 pm: establishing database connection
-04/19/2018 04:31:17 pm: Error: UPDATE Doctors SET review = CONCAT(review, 'He's a lolicon') WHERE license='12345678';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a lolicon') WHERE license='12345678'' at line 1
-
-04/19/2018 04:31:17 pm: responding and closing function 
-
-
-04/19/2018 04:31:17 pm: receiving rabbit message
-04/19/2018 04:31:17 pm: establishing database connection
-04/19/2018 04:31:17 pm: responding and closing function 
-
-
-04/19/2018 04:32:28 pm: receiving rabbit message
-04/19/2018 04:32:28 pm: establishing database connection
-04/19/2018 04:32:29 pm: responding and closing function 
-
-
-04/19/2018 04:32:29 pm: receiving rabbit message
-04/19/2018 04:32:29 pm: establishing database connection
-04/19/2018 04:32:29 pm: responding and closing function 
-
-
+05/06/2018 02:28:39 pm: this is a test
+05/06/2018 04:18:17 pm: this is a test
+05/06/2018 04:18:17 pm: test 2
+05/06/2018 08:02:37 pm: 
+05/06/2018 08:03:09 pm: 
+05/06/2018 08:03:39 pm: O\'Brien
+05/06/2018 08:04:16 pm: O\'Brien
+05/06/2018 08:04:30 pm: O\'Brien
+05/06/2018 08:04:37 pm: O\'Brien
+05/06/2018 08:05:52 pm: O\'Brien
+05/06/2018 08:06:34 pm: O\'Brien
+05/06/2018 08:06:53 pm: O\'Brien
+05/06/2018 08:56:57 pm: O\'Brien
+05/06/2018 09:04:37 pm: O\'Brien
+05/06/2018 09:39:23 pm: test
+05/06/2018 09:39:26 pm: test
+05/06/2018 09:39:26 pm: 
+05/06/2018 11:04:43 pm: receiving rabbit message
+05/06/2018 11:04:43 pm: establishing database connection
+05/06/2018 11:04:43 pm: Error: mysqli connection failed: 
+05/06/2018 11:04:43 pm: test
+05/06/2018 11:04:43 pm: 
+05/06/2018 11:04:43 pm: responding and closing function 
+
+
+05/06/2018 11:06:47 pm: receiving rabbit message
+05/06/2018 11:06:47 pm: establishing database connection
+05/06/2018 11:06:47 pm: Error: mysqli connection failed: 
+05/06/2018 11:06:47 pm: test
+05/06/2018 11:06:47 pm: 
+05/06/2018 11:06:47 pm: responding and closing function 
+
+
+05/06/2018 11:11:09 pm: receiving rabbit message
+05/06/2018 11:11:09 pm: establishing database connection
+05/06/2018 11:11:09 pm: Error: mysqli connection failed: 
+05/06/2018 11:11:09 pm: test
+05/06/2018 11:11:09 pm: 
+05/06/2018 11:11:09 pm: responding and closing function 
+
+
+05/06/2018 11:11:40 pm: receiving rabbit message
+05/06/2018 11:11:40 pm: establishing database connection
+05/06/2018 11:11:40 pm: Error: mysqli connection failed: 
+05/06/2018 11:11:40 pm: test
+05/06/2018 11:11:40 pm: 
+05/06/2018 11:11:40 pm: responding and closing function 
+
+
+05/06/2018 11:11:56 pm: receiving rabbit message
+05/06/2018 11:11:56 pm: establishing database connection
+05/06/2018 11:11:56 pm: Error: mysqli connection failed: 0
+05/06/2018 11:11:56 pm: test
+05/06/2018 11:11:56 pm: 
+05/06/2018 11:11:56 pm: responding and closing function 
+
+
+05/06/2018 11:13:28 pm: receiving rabbit message
+05/06/2018 11:13:28 pm: establishing database connection
+05/06/2018 11:13:28 pm: Error: mysqli connection failed: 0
+05/06/2018 11:13:28 pm: test
+05/06/2018 11:13:28 pm: 
+05/06/2018 11:13:28 pm: responding and closing function 
+
+
+05/06/2018 11:13:41 pm: receiving rabbit message
+05/06/2018 11:13:41 pm: establishing database connection
+05/06/2018 11:13:41 pm: Error: mysqli connection failed: 0
+05/06/2018 11:13:41 pm: test
+05/06/2018 11:13:41 pm: 
+05/06/2018 11:13:41 pm: responding and closing function 
+
+
+05/06/2018 11:16:59 pm: receiving rabbit message
+05/06/2018 11:16:59 pm: establishing database connection
+05/06/2018 11:16:59 pm: Error: mysqli connection failed: 0
+05/06/2018 11:16:59 pm: test
+05/06/2018 11:16:59 pm: 
+05/06/2018 11:16:59 pm: responding and closing function 
+
+
+05/06/2018 11:18:19 pm: receiving rabbit message
+05/06/2018 11:18:19 pm: establishing database connection
+05/06/2018 11:18:19 pm: Error: mysqli connection failed: 0
+05/06/2018 11:18:19 pm: test
+05/06/2018 11:18:19 pm: 
+05/06/2018 11:18:19 pm: responding and closing function 
+
+
+05/06/2018 11:19:02 pm: receiving rabbit message
+05/06/2018 11:19:02 pm: establishing database connection
+05/06/2018 11:19:02 pm: Error: mysqli connection failed: 
+05/06/2018 11:19:02 pm: test
+05/06/2018 11:19:02 pm: 
+05/06/2018 11:19:02 pm: responding and closing function 
+
+
+05/06/2018 11:22:12 pm: receiving rabbit message
+05/06/2018 11:22:12 pm: establishing database connection
+05/06/2018 11:22:12 pm: Error: mysqli connection failed: 
+05/06/2018 11:22:12 pm: checking checkQ was successful
+05/06/2018 11:22:12 pm: responding and closing function 
+
+
+05/06/2018 11:24:01 pm: receiving rabbit message
+05/06/2018 11:24:01 pm: establishing database connection
+05/06/2018 11:24:01 pm: checking checkQ was successful
+05/06/2018 11:24:01 pm: responding and closing function 
+
+
+05/06/2018 11:25:40 pm: receiving rabbit message
+05/06/2018 11:25:40 pm: establishing database connection
+05/06/2018 11:25:40 pm: checking checkQ was successful
+05/06/2018 11:25:40 pm: responding and closing function 
+
+
+05/06/2018 11:30:18 pm: receiving rabbit message
+05/06/2018 11:30:18 pm: establishing database connection
+05/06/2018 11:30:18 pm: checking checkQ was successful
+05/06/2018 11:30:18 pm: responding and closing function 
+
+
+05/06/2018 11:32:43 pm: receiving rabbit message
+05/06/2018 11:32:43 pm: establishing database connection
+05/06/2018 11:32:43 pm: checking checkQ was successful
+05/06/2018 11:32:43 pm: responding and closing function 
+
+
+05/07/2018 12:19:00 am: receiving rabbit message
+05/07/2018 12:19:00 am: establishing database connection
+05/07/2018 12:19:19 am: receiving rabbit message
+05/07/2018 12:19:19 am: establishing database connection
+05/07/2018 12:19:19 am: Rate doc: get doc info:Unknown column 'user' in 'where clause' 
+05/07/2018 12:19:19 am: Rate doc: updating ratingsYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 5)' at line 1 
+05/07/2018 12:19:19 am: Get sum You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 
+05/07/2018 12:19:19 am: get countYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 
+05/07/2018 12:19:19 am: new ratingYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 
+05/07/2018 12:19:19 am: responding and closing function 
+
+
+05/07/2018 12:24:10 am: receiving rabbit message
+05/07/2018 12:24:10 am: establishing database connection
+05/07/2018 12:24:10 am: Rate doc: get doc info: was successful
+05/07/2018 12:24:10 am: Rate doc: updating ratings was successful
+05/07/2018 12:24:10 am: Get sum  was successful
+05/07/2018 12:24:10 am: get count was successful
+05/07/2018 12:24:10 am: new ratingUnknown column 'NAN' in 'field list' 
+05/07/2018 12:24:10 am: responding and closing function 
+
+
+05/07/2018 12:34:01 am: receiving rabbit message
+05/07/2018 12:34:01 am: establishing database connection
+05/07/2018 12:34:01 am: Rate doc: get doc info: was successful
+05/07/2018 12:34:01 am: Rate doc: updating ratings was successful
+05/07/2018 12:34:01 am: Get sum  was successful
+05/07/2018 12:34:01 am: get count was successful
+05/07/2018 12:34:01 am: new ratingUnknown column 'NAN' in 'field list' 
+05/07/2018 12:34:01 am: responding and closing function 
+
+
+05/07/2018 12:35:12 am: receiving rabbit message
+05/07/2018 12:35:12 am: establishing database connection
+05/07/2018 12:35:12 am: Rate doc: get doc info: was successful
+05/07/2018 12:35:12 am: Rate doc: updating ratings was successful
+05/07/2018 12:35:12 am: Get sum  was successful
+05/07/2018 12:35:12 am: get count was successful
+05/07/2018 12:35:12 am: new ratingUnknown column 'NAN' in 'field list' 
+05/07/2018 12:35:12 am: responding and closing function 
+
+
+05/07/2018 12:36:39 am: receiving rabbit message
+05/07/2018 12:36:39 am: establishing database connection
+05/07/2018 12:36:39 am: Rate doc: get doc info: was successful
+05/07/2018 12:36:39 am: Rate doc: updating ratings was successful
+05/07/2018 12:36:39 am: Get sum  was successful
+05/07/2018 12:36:39 am: get count was successful
+05/07/2018 12:36:39 am: new ratingUnknown column 'NAN' in 'field list' 
+05/07/2018 12:36:39 am: responding and closing function 
+
+
+05/07/2018 12:43:11 am: receiving rabbit message
+05/07/2018 12:43:11 am: establishing database connection
+05/07/2018 12:43:11 am: Rate doc: get doc info: was successful
+05/07/2018 12:43:11 am: Rate doc: updating ratings was successful
+05/07/2018 12:43:11 am: Get sum  was successful
+05/07/2018 12:43:11 am: get count was successful
+05/07/2018 12:43:11 am: new ratingUnknown column 'NAN' in 'field list' 
+05/07/2018 12:43:11 am: responding and closing function 
+
+
+05/07/2018 12:47:23 am: receiving rabbit message
+05/07/2018 12:47:23 am: establishing database connection
+05/07/2018 12:47:23 am: Rate doc: get doc info: was successful
+05/07/2018 12:47:23 am: Rate doc: updating ratings was successful
+05/07/2018 12:47:23 am: Get sum  was successful
+05/07/2018 12:47:23 am: get count was successful
+05/07/2018 12:47:23 am: new ratingUnknown column 'NAN' in 'field list' 
+05/07/2018 12:47:23 am: responding and closing function 
+
+
+05/07/2018 12:48:08 am: receiving rabbit message
+05/07/2018 12:48:08 am: establishing database connection
+05/07/2018 12:48:08 am: Rate doc: get doc info: was successful
+05/07/2018 12:48:08 am: Rate doc: updating ratings was successful
+05/07/2018 12:48:08 am: Get sum  was successful
+05/07/2018 12:48:08 am: get count was successful
+05/07/2018 12:48:08 am: new rating was successful
+05/07/2018 12:48:08 am: responding and closing function 
+
+
+05/07/2018 12:50:13 am: receiving rabbit message
+05/07/2018 12:50:13 am: establishing database connection
+05/07/2018 12:50:13 am: Rate doc: get doc info: was successful
+05/07/2018 12:50:13 am: Rate doc: updating ratings was successful
+05/07/2018 12:50:13 am: Get sum  was successful
+05/07/2018 12:50:13 am: get count was successful
+05/07/2018 12:50:13 am: new rating was successful
+05/07/2018 12:50:13 am: responding and closing function 
+
+
+05/07/2018 12:59:25 am: receiving rabbit message
+05/07/2018 12:59:25 am: establishing database connection
+05/07/2018 12:59:25 am:  Login attempt for user: 1 
+05/07/2018 12:59:26 am: receiving rabbit message
+05/07/2018 12:59:26 am: establishing database connection
+05/07/2018 12:59:35 am: receiving rabbit message
+05/07/2018 12:59:35 am: establishing database connection
+05/07/2018 12:59:35 am: responding and closing function 
+
+
+05/07/2018 12:59:35 am: receiving rabbit message
+05/07/2018 12:59:35 am: establishing database connection
+05/07/2018 01:05:03 am: receiving rabbit message
+05/07/2018 01:05:03 am: establishing database connection
+05/07/2018 01:05:10 am: receiving rabbit message
+05/07/2018 01:05:10 am: establishing database connection
+05/07/2018 01:05:10 am: responding and closing function 
+
+
+05/07/2018 01:05:10 am: receiving rabbit message
+05/07/2018 01:05:10 am: establishing database connection
+05/07/2018 01:07:11 am: receiving rabbit message
+05/07/2018 01:07:11 am: establishing database connection
+05/07/2018 01:07:11 am: Rate doc: get doc info: was successful
+05/07/2018 01:07:11 am: Rate doc: updating ratings was successful
+05/07/2018 01:07:11 am: Get sum  was successful
+05/07/2018 01:07:11 am: get count was successful
+05/07/2018 01:07:11 am: new rating was successful
+05/07/2018 01:07:11 am: responding and closing function 
+
+
+05/07/2018 01:07:11 am: receiving rabbit message
+05/07/2018 01:07:11 am: establishing database connection
+05/07/2018 01:11:31 am: receiving rabbit message
+05/07/2018 01:11:31 am: establishing database connection
+05/07/2018 01:11:31 am:  Login attempt for user: MrLolicon 
+05/07/2018 01:12:07 am: receiving rabbit message
+05/07/2018 01:12:07 am: establishing database connection
+05/07/2018 01:12:07 am:  Login attempt for user: rich 
+05/07/2018 01:12:19 am: receiving rabbit message
+05/07/2018 01:12:19 am: establishing database connection
+05/07/2018 01:12:19 am:  Login attempt for user: rich 
+05/07/2018 01:12:19 am: receiving rabbit message
+05/07/2018 01:12:19 am: establishing database connection
+05/07/2018 01:12:33 am: receiving rabbit message
+05/07/2018 01:12:33 am: establishing database connection
+05/07/2018 01:12:33 am: connection failure<br>Unknown column 'gender' in 'field list'
+05/07/2018 01:14:38 am: receiving rabbit message
+05/07/2018 01:14:38 am: establishing database connection
+05/07/2018 01:14:38 am: connection failure<br>Unknown column 'gender' in 'field list'
+05/07/2018 01:17:21 am: receiving rabbit message
+05/07/2018 01:17:21 am: establishing database connection
+05/07/2018 01:18:58 am: receiving rabbit message
+05/07/2018 01:18:58 am: establishing database connection
+05/07/2018 01:18:58 am:  Login attempt for user: rich 
+05/07/2018 01:18:58 am: receiving rabbit message
+05/07/2018 01:18:58 am: establishing database connection
+05/07/2018 01:19:01 am: receiving rabbit message
+05/07/2018 01:19:01 am: establishing database connection
+05/07/2018 01:20:16 am: receiving rabbit message
+05/07/2018 01:20:16 am: establishing database connection
+05/07/2018 01:20:16 am:  Login attempt for user: 777 
+05/07/2018 01:20:16 am: receiving rabbit message
+05/07/2018 01:20:16 am: establishing database connection
+05/07/2018 01:20:28 am: receiving rabbit message
+05/07/2018 01:20:28 am: establishing database connection
+05/07/2018 01:20:28 am:  Login attempt for user: rich 
+05/07/2018 01:20:28 am: receiving rabbit message
+05/07/2018 01:20:28 am: establishing database connection
+05/07/2018 01:20:37 am: receiving rabbit message
+05/07/2018 01:20:37 am: establishing database connection
+05/07/2018 01:21:54 am: receiving rabbit message
+05/07/2018 01:21:54 am: establishing database connection
+05/07/2018 01:21:54 am:  Login attempt for user: 777 
+05/07/2018 01:21:54 am: receiving rabbit message
+05/07/2018 01:21:54 am: establishing database connection
+05/07/2018 01:22:10 am: receiving rabbit message
+05/07/2018 01:22:10 am: establishing database connection
+05/07/2018 01:22:10 am:  Login attempt for user: rich 
+05/07/2018 01:22:10 am: receiving rabbit message
+05/07/2018 01:22:10 am: establishing database connection
+05/07/2018 01:22:13 am: receiving rabbit message
+05/07/2018 01:22:13 am: establishing database connection
+05/07/2018 01:23:45 am: receiving rabbit message
+05/07/2018 01:23:45 am: establishing database connection
+05/07/2018 01:24:13 am: receiving rabbit message
+05/07/2018 01:24:13 am: establishing database connection
+05/07/2018 01:24:15 am: receiving rabbit message
+05/07/2018 01:24:15 am: establishing database connection
+05/07/2018 01:25:01 am: receiving rabbit message
+05/07/2018 01:25:01 am: establishing database connection
+05/07/2018 01:28:26 am: receiving rabbit message
+05/07/2018 01:28:26 am: establishing database connection
+05/07/2018 01:28:28 am: receiving rabbit message
+05/07/2018 01:28:28 am: establishing database connection
+05/07/2018 01:29:56 am: receiving rabbit message
+05/07/2018 01:29:56 am: establishing database connection
+05/07/2018 01:32:06 am: receiving rabbit message
+05/07/2018 01:32:06 am: establishing database connection
+05/07/2018 01:43:20 am: receiving rabbit message
+05/07/2018 01:43:20 am: establishing database connection
+05/07/2018 01:43:21 am: receiving rabbit message
+05/07/2018 01:43:21 am: establishing database connection
+05/07/2018 01:43:35 am: receiving rabbit message
+05/07/2018 01:43:35 am: establishing database connection
+05/07/2018 01:47:35 am: receiving rabbit message
+05/07/2018 01:47:35 am: establishing database connection
+05/07/2018 01:47:35 am:  Login attempt for user: rich 
+05/07/2018 01:47:35 am: receiving rabbit message
+05/07/2018 01:47:35 am: establishing database connection
+05/07/2018 01:47:37 am: receiving rabbit message
+05/07/2018 01:47:37 am: establishing database connection
+05/07/2018 01:47:47 am: receiving rabbit message
+05/07/2018 01:47:47 am: establishing database connection
+05/07/2018 01:47:55 am: receiving rabbit message
+05/07/2018 01:47:55 am: establishing database connection
+05/07/2018 01:47:55 am: responding and closing function 
+
+
+05/07/2018 01:47:56 am: receiving rabbit message
+05/07/2018 01:47:56 am: establishing database connection
+05/07/2018 01:51:43 am: receiving rabbit message
+05/07/2018 01:51:43 am: establishing database connection
+05/07/2018 01:51:45 am: receiving rabbit message
+05/07/2018 01:51:45 am: establishing database connection
+05/07/2018 01:51:51 am: receiving rabbit message
+05/07/2018 01:51:51 am: establishing database connection
+05/07/2018 01:52:00 am: receiving rabbit message
+05/07/2018 01:52:00 am: establishing database connection
+05/07/2018 01:52:00 am: responding and closing function 
+
+
+05/07/2018 01:52:01 am: receiving rabbit message
+05/07/2018 01:52:01 am: establishing database connection
+05/07/2018 02:13:28 am: receiving rabbit message
+05/07/2018 02:13:28 am: establishing database connection
+05/07/2018 02:13:29 am: receiving rabbit message
+05/07/2018 02:13:29 am: establishing database connection
+05/07/2018 02:13:58 am: receiving rabbit message
+05/07/2018 02:13:58 am: establishing database connection
+05/07/2018 02:14:29 am: receiving rabbit message
+05/07/2018 02:14:29 am: establishing database connection
+05/07/2018 02:14:31 am: receiving rabbit message
+05/07/2018 02:14:31 am: establishing database connection
+05/07/2018 02:19:22 am: receiving rabbit message
+05/07/2018 02:19:22 am: establishing database connection
+05/07/2018 02:19:43 am: receiving rabbit message
+05/07/2018 02:19:43 am: establishing database connection
+05/07/2018 02:22:13 am: receiving rabbit message
+05/07/2018 02:22:13 am: establishing database connection
+05/07/2018 02:22:28 am: receiving rabbit message
+05/07/2018 02:22:28 am: establishing database connection
+05/07/2018 02:22:28 am: responding and closing function 
+
+
+05/07/2018 02:22:29 am: receiving rabbit message
+05/07/2018 02:22:29 am: establishing database connection
+05/07/2018 02:24:46 am: receiving rabbit message
+05/07/2018 02:24:46 am: establishing database connection
+05/07/2018 02:24:49 am: receiving rabbit message
+05/07/2018 02:24:49 am: establishing database connection
+05/07/2018 02:24:50 am: receiving rabbit message
+05/07/2018 02:24:50 am: establishing database connection
+05/07/2018 02:24:55 am: receiving rabbit message
+05/07/2018 02:24:55 am: establishing database connection
+05/07/2018 02:25:02 am: receiving rabbit message
+05/07/2018 02:25:02 am: establishing database connection
+05/07/2018 02:28:29 am: receiving rabbit message
+05/07/2018 02:28:29 am: establishing database connection
+05/07/2018 02:28:29 am:  Login attempt for user: rich 
+05/07/2018 02:31:19 am: receiving rabbit message
+05/07/2018 02:31:19 am: establishing database connection
+05/07/2018 02:31:19 am:  Login attempt for user: rich 
+05/07/2018 02:31:19 am: receiving rabbit message
+05/07/2018 02:31:19 am: establishing database connection
+05/07/2018 02:31:21 am: receiving rabbit message
+05/07/2018 02:31:21 am: establishing database connection
+05/07/2018 02:31:30 am: receiving rabbit message
+05/07/2018 02:31:30 am: establishing database connection
+05/07/2018 02:31:49 am: receiving rabbit message
+05/07/2018 02:31:49 am: establishing database connection
+05/07/2018 02:34:14 am: receiving rabbit message
+05/07/2018 02:34:14 am: establishing database connection
+05/07/2018 02:34:14 am:  Login attempt for user: rich 
+05/07/2018 02:34:14 am: receiving rabbit message
+05/07/2018 02:34:14 am: establishing database connection
+05/07/2018 02:34:17 am: receiving rabbit message
+05/07/2018 02:34:17 am: establishing database connection
+05/07/2018 02:34:22 am: receiving rabbit message
+05/07/2018 02:34:22 am: establishing database connection
+05/07/2018 02:34:28 am: receiving rabbit message
+05/07/2018 02:34:28 am: establishing database connection
+05/07/2018 02:34:28 am: Error; <br>
+.
+05/07/2018 02:34:29 am: receiving rabbit message
+05/07/2018 02:34:29 am: establishing database connection
+05/07/2018 02:48:56 am: receiving rabbit message
+05/07/2018 02:48:56 am: establishing database connection
+05/07/2018 02:48:56 am:  Login attempt for user: 1 
+05/07/2018 02:48:56 am: receiving rabbit message
+05/07/2018 02:48:56 am: establishing database connection
+05/07/2018 02:49:10 am: receiving rabbit message
+05/07/2018 02:49:10 am: establishing database connection
+05/07/2018 02:49:10 am: Error: UPDATE Doctors SET review = CONCAT(review, 'He's a weird lolicon dude with odd t-shirts') WHERE license='12345678';<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a weird lolicon dude with odd t-shirts') WHERE license='12345678'' at line 1
+
+05/07/2018 02:49:10 am: responding and closing function 
+
+
+05/07/2018 02:49:10 am: receiving rabbit message
+05/07/2018 02:49:10 am: establishing database connection
+05/07/2018 02:51:41 am: receiving rabbit message
+05/07/2018 02:51:41 am: establishing database connection
+05/07/2018 02:51:41 am: Error: UPDATE Doctors SET review=CONCAT(review, 'He's a pretty decent doc.') WHERE license=12345678;<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a pretty decent doc.') WHERE license=12345678' at line 1
+
+05/07/2018 02:51:41 am: responding and closing function 
+
+
+05/07/2018 02:51:41 am: receiving rabbit message
+05/07/2018 02:51:41 am: establishing database connection
+05/07/2018 02:53:30 am: receiving rabbit message
+05/07/2018 02:53:30 am: establishing database connection
+05/07/2018 02:53:30 am:  Login attempt for user: rich 
+05/07/2018 02:53:30 am: receiving rabbit message
+05/07/2018 02:53:30 am: establishing database connection
+05/07/2018 02:53:32 am: receiving rabbit message
+05/07/2018 02:53:32 am: establishing database connection
+05/07/2018 02:53:38 am: receiving rabbit message
+05/07/2018 02:53:38 am: establishing database connection
+05/07/2018 02:53:45 am: receiving rabbit message
+05/07/2018 02:53:45 am: establishing database connection
+05/07/2018 02:53:45 am: Error; <br>
+.
+05/07/2018 02:53:46 am: receiving rabbit message
+05/07/2018 02:53:46 am: establishing database connection
+05/07/2018 02:55:10 am: receiving rabbit message
+05/07/2018 02:55:10 am: establishing database connection
+05/07/2018 02:55:22 am: receiving rabbit message
+05/07/2018 02:55:22 am: establishing database connection
+05/07/2018 02:55:35 am: receiving rabbit message
+05/07/2018 02:55:35 am: establishing database connection
+05/07/2018 02:55:59 am: receiving rabbit message
+05/07/2018 02:55:59 am: establishing database connection
+05/07/2018 02:55:59 am: Error; <br>
+.
+05/07/2018 02:56:00 am: receiving rabbit message
+05/07/2018 02:56:00 am: establishing database connection
+05/07/2018 02:57:11 am: receiving rabbit message
+05/07/2018 02:57:11 am: establishing database connection
+05/07/2018 02:57:12 am: receiving rabbit message
+05/07/2018 02:57:12 am: establishing database connection
+05/07/2018 02:57:19 am: receiving rabbit message
+05/07/2018 02:57:19 am: establishing database connection
+05/07/2018 02:57:25 am: receiving rabbit message
+05/07/2018 02:57:25 am: establishing database connection
+05/07/2018 02:57:25 am: Error; <br>
+.
+05/07/2018 02:57:27 am: receiving rabbit message
+05/07/2018 02:57:27 am: establishing database connection
+05/07/2018 02:58:56 am: receiving rabbit message
+05/07/2018 02:58:56 am: establishing database connection
+05/07/2018 02:58:57 am: receiving rabbit message
+05/07/2018 02:58:57 am: establishing database connection
+05/07/2018 02:59:03 am: receiving rabbit message
+05/07/2018 02:59:03 am: establishing database connection
+05/07/2018 02:59:10 am: receiving rabbit message
+05/07/2018 02:59:10 am: establishing database connection
+05/07/2018 02:59:10 am: Error; <br>
+.
+05/07/2018 02:59:11 am: receiving rabbit message
+05/07/2018 02:59:11 am: establishing database connection
+05/07/2018 02:59:28 am: receiving rabbit message
+05/07/2018 02:59:28 am: establishing database connection
+05/07/2018 02:59:31 am: receiving rabbit message
+05/07/2018 02:59:31 am: establishing database connection
+05/07/2018 02:59:38 am: receiving rabbit message
+05/07/2018 02:59:38 am: establishing database connection
+05/07/2018 03:00:01 am: receiving rabbit message
+05/07/2018 03:00:01 am: establishing database connection
+05/07/2018 03:00:01 am: Error; <br>
+.
+05/07/2018 03:00:02 am: receiving rabbit message
+05/07/2018 03:00:02 am: establishing database connection
+05/07/2018 03:01:20 am: receiving rabbit message
+05/07/2018 03:01:20 am: establishing database connection
+05/07/2018 03:01:58 am: receiving rabbit message
+05/07/2018 03:01:58 am: establishing database connection
+05/07/2018 03:02:04 am: receiving rabbit message
+05/07/2018 03:02:04 am: establishing database connection
+05/07/2018 03:02:10 am: receiving rabbit message
+05/07/2018 03:02:10 am: establishing database connection
+05/07/2018 03:02:10 am: Error; <br>
+.
+05/07/2018 03:02:11 am: receiving rabbit message
+05/07/2018 03:02:11 am: establishing database connection
+05/07/2018 03:03:17 am: receiving rabbit message
+05/07/2018 03:03:17 am: establishing database connection
+05/07/2018 03:03:18 am: receiving rabbit message
+05/07/2018 03:03:18 am: establishing database connection
+05/07/2018 03:03:27 am: receiving rabbit message
+05/07/2018 03:03:27 am: establishing database connection
+05/07/2018 03:03:33 am: receiving rabbit message
+05/07/2018 03:03:33 am: establishing database connection
+05/07/2018 03:03:33 am: Error; <br>
+.
+05/07/2018 03:03:33 am: receiving rabbit message
+05/07/2018 03:03:33 am: establishing database connection
+05/07/2018 03:06:21 am: receiving rabbit message
+05/07/2018 03:06:21 am: establishing database connection
+05/07/2018 03:06:23 am: receiving rabbit message
+05/07/2018 03:06:23 am: establishing database connection
+05/07/2018 03:06:27 am: receiving rabbit message
+05/07/2018 03:06:27 am: establishing database connection
+05/07/2018 03:06:34 am: receiving rabbit message
+05/07/2018 03:06:34 am: establishing database connection
+05/07/2018 03:06:34 am: Error; <br>
+.
+05/07/2018 03:06:35 am: receiving rabbit message
+05/07/2018 03:06:35 am: establishing database connection
+05/07/2018 03:06:48 am: receiving rabbit message
+05/07/2018 03:06:48 am: establishing database connection
+05/07/2018 03:06:50 am: receiving rabbit message
+05/07/2018 03:06:50 am: establishing database connection
+05/07/2018 03:07:07 am: receiving rabbit message
+05/07/2018 03:07:07 am: establishing database connection
+05/07/2018 03:09:43 am: receiving rabbit message
+05/07/2018 03:09:43 am: establishing database connection
+05/07/2018 03:09:43 am: Error; <br>
+.
+05/07/2018 03:09:44 am: receiving rabbit message
+05/07/2018 03:09:44 am: establishing database connection
+05/07/2018 03:10:32 am: receiving rabbit message
+05/07/2018 03:10:32 am: establishing database connection
+05/07/2018 03:10:34 am: receiving rabbit message
+05/07/2018 03:10:34 am: establishing database connection
+05/07/2018 03:10:42 am: receiving rabbit message
+05/07/2018 03:10:42 am: establishing database connection
+05/07/2018 03:10:50 am: receiving rabbit message
+05/07/2018 03:10:50 am: establishing database connection
+05/07/2018 03:10:50 am: Error; <br>
+.
+05/07/2018 03:10:51 am: receiving rabbit message
+05/07/2018 03:10:51 am: establishing database connection
+05/07/2018 03:11:30 am: receiving rabbit message
+05/07/2018 03:11:30 am: establishing database connection
+05/07/2018 03:11:32 am: receiving rabbit message
+05/07/2018 03:11:32 am: establishing database connection
+05/07/2018 03:11:38 am: receiving rabbit message
+05/07/2018 03:11:38 am: establishing database connection
+05/07/2018 03:11:45 am: receiving rabbit message
+05/07/2018 03:11:45 am: establishing database connection
+05/07/2018 03:11:45 am: Error; <br>
+.
+05/07/2018 03:11:46 am: receiving rabbit message
+05/07/2018 03:11:46 am: establishing database connection
+05/07/2018 03:13:44 am: receiving rabbit message
+05/07/2018 03:13:44 am: establishing database connection
+05/07/2018 03:13:44 am:  Login attempt for user: 1 
+05/07/2018 03:13:44 am: receiving rabbit message
+05/07/2018 03:13:44 am: establishing database connection
+05/07/2018 03:15:04 am: receiving rabbit message
+05/07/2018 03:15:04 am: establishing database connection
+05/07/2018 03:15:04 am:  Login attempt for user: rich 
+05/07/2018 03:15:04 am: receiving rabbit message
+05/07/2018 03:15:04 am: establishing database connection
+05/07/2018 03:15:12 am: receiving rabbit message
+05/07/2018 03:15:12 am: establishing database connection
+05/07/2018 03:15:39 am: receiving rabbit message
+05/07/2018 03:15:39 am: establishing database connection
+05/07/2018 03:15:58 am: receiving rabbit message
+05/07/2018 03:15:58 am: establishing database connection
+05/07/2018 03:15:58 am: Error; 
+05/07/2018 03:15:59 am: receiving rabbit message
+05/07/2018 03:15:59 am: establishing database connection
+05/07/2018 03:25:17 am: receiving rabbit message
+05/07/2018 03:25:17 am: establishing database connection
+05/07/2018 03:25:22 am: receiving rabbit message
+05/07/2018 03:25:22 am: establishing database connection
+05/07/2018 03:25:22 am: Error; 
+05/07/2018 03:25:24 am: receiving rabbit message
+05/07/2018 03:25:24 am: establishing database connection
+05/07/2018 03:28:12 am: receiving rabbit message
+05/07/2018 03:28:12 am: establishing database connection
+05/07/2018 03:28:24 am: receiving rabbit message
+05/07/2018 03:28:24 am: establishing database connection
+05/07/2018 03:28:24 am: Error; 
+05/07/2018 03:28:25 am: receiving rabbit message
+05/07/2018 03:28:25 am: establishing database connection
+05/07/2018 03:31:21 am: receiving rabbit message
+05/07/2018 03:31:21 am: establishing database connection
+05/07/2018 03:31:32 am: receiving rabbit message
+05/07/2018 03:31:32 am: establishing database connection
+05/07/2018 03:31:32 am: Error; 
+05/07/2018 03:31:33 am: receiving rabbit message
+05/07/2018 03:31:33 am: establishing database connection
+05/07/2018 03:32:59 am: receiving rabbit message
+05/07/2018 03:32:59 am: establishing database connection
+05/07/2018 03:33:09 am: receiving rabbit message
+05/07/2018 03:33:09 am: establishing database connection
+05/07/2018 03:33:11 am: receiving rabbit message
+05/07/2018 03:33:11 am: establishing database connection
+05/07/2018 03:34:50 am: receiving rabbit message
+05/07/2018 03:34:50 am: establishing database connection
+05/07/2018 03:35:02 am: receiving rabbit message
+05/07/2018 03:35:02 am: establishing database connection
+05/07/2018 03:35:03 am: receiving rabbit message
+05/07/2018 03:35:03 am: establishing database connection
+05/07/2018 03:35:36 am: receiving rabbit message
+05/07/2018 03:35:36 am: establishing database connection
+05/07/2018 03:35:41 am: receiving rabbit message
+05/07/2018 03:35:41 am: establishing database connection
+05/07/2018 03:35:41 am: Error; You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='rich'' at line 1
+05/07/2018 03:35:43 am: receiving rabbit message
+05/07/2018 03:35:43 am: establishing database connection
+05/07/2018 03:36:39 am: receiving rabbit message
+05/07/2018 03:36:39 am: establishing database connection
+05/07/2018 03:36:45 am: receiving rabbit message
+05/07/2018 03:36:45 am: establishing database connection
+05/07/2018 03:36:45 am: Error; You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='rich'' at line 1
+05/07/2018 03:36:46 am: receiving rabbit message
+05/07/2018 03:36:46 am: establishing database connection
+05/07/2018 03:37:45 am: receiving rabbit message
+05/07/2018 03:37:45 am: establishing database connection
+05/07/2018 03:37:52 am: receiving rabbit message
+05/07/2018 03:37:52 am: establishing database connection
+05/07/2018 03:37:53 am: receiving rabbit message
+05/07/2018 03:37:53 am: establishing database connection
+05/07/2018 03:45:57 am: receiving rabbit message
+05/07/2018 03:45:57 am: establishing database connection
+05/07/2018 03:45:57 am:  Login attempt for user: 1 
+05/07/2018 03:45:57 am: receiving rabbit message
+05/07/2018 03:45:57 am: establishing database connection
+05/07/2018 03:47:30 am: receiving rabbit message
+05/07/2018 03:47:30 am: establishing database connection
+05/07/2018 03:47:30 am:  Login attempt for user: 777 
+05/07/2018 03:47:30 am: receiving rabbit message
+05/07/2018 03:47:30 am: establishing database connection
+05/07/2018 03:48:55 am: receiving rabbit message
+05/07/2018 03:48:55 am: establishing database connection
+05/07/2018 03:48:55 am:  adding to uAuth error<br>Duplicate entry '' for key 'PRIMARY'
+05/07/2018 03:49:07 am: receiving rabbit message
+05/07/2018 03:49:07 am: establishing database connection
+05/07/2018 03:49:07 am:  Login attempt for user: rick 
+05/07/2018 03:49:21 am: receiving rabbit message
+05/07/2018 03:49:21 am: establishing database connection
+05/07/2018 03:49:21 am:  Login attempt for user: Rick 
+05/07/2018 03:52:47 am: receiving rabbit message
+05/07/2018 03:52:47 am: establishing database connection
+05/07/2018 03:53:10 am: receiving rabbit message
+05/07/2018 03:53:10 am: establishing database connection
+05/07/2018 03:53:10 am:  Login attempt for user: rick 
+05/07/2018 03:53:10 am: receiving rabbit message
+05/07/2018 03:53:10 am: establishing database connection
+05/07/2018 03:53:26 am: receiving rabbit message
+05/07/2018 03:53:26 am: establishing database connection
+05/07/2018 03:53:26 am: doc search complete
+05/07/2018 03:53:54 am: receiving rabbit message
+05/07/2018 03:53:54 am: establishing database connection
+05/07/2018 03:53:54 am: 
+Update doc failed. 
+05/07/2018 03:53:54 am: responding and closing function 
+
+
+05/07/2018 03:53:55 am: receiving rabbit message
+05/07/2018 03:53:55 am: establishing database connection
+05/07/2018 03:53:55 am: Incorrect doctor search type
+
+05/07/2018 03:54:41 am: receiving rabbit message
+05/07/2018 03:54:41 am: establishing database connection
+05/07/2018 03:54:41 am: doc search complete
+05/07/2018 03:58:09 am: receiving rabbit message
+05/07/2018 03:58:09 am: establishing database connection
+05/07/2018 03:58:09 am: 
+Update doc failed. 
+05/07/2018 03:58:09 am: responding and closing function 
+
+
+05/07/2018 03:58:10 am: receiving rabbit message
+05/07/2018 03:58:10 am: establishing database connection
+05/07/2018 03:58:10 am: Incorrect doctor search type
+
+05/07/2018 04:01:21 am: receiving rabbit message
+05/07/2018 04:01:21 am: establishing database connection
+05/07/2018 04:01:21 am: doc search complete
+05/07/2018 04:01:30 am: receiving rabbit message
+05/07/2018 04:01:30 am: establishing database connection
+05/07/2018 04:01:30 am: 
+Update doc failed. 
+05/07/2018 04:01:30 am: responding and closing function 
+
+
+05/07/2018 04:01:31 am: receiving rabbit message
+05/07/2018 04:01:31 am: establishing database connection
+05/07/2018 04:01:31 am: Incorrect doctor search type
+
+05/07/2018 04:13:30 am: receiving rabbit message
+05/07/2018 04:13:30 am: establishing database connection
+05/07/2018 04:13:30 am: doc search complete
+05/07/2018 04:13:36 am: receiving rabbit message
+05/07/2018 04:13:36 am: establishing database connection
+05/07/2018 04:13:36 am: 
+Update doc failed. 
+05/07/2018 04:13:36 am: responding and closing function 
+
+
+05/07/2018 04:13:37 am: receiving rabbit message
+05/07/2018 04:13:37 am: establishing database connection
+05/07/2018 04:13:37 am: Incorrect doctor search type
+
+05/07/2018 04:20:15 am: receiving rabbit message
+05/07/2018 04:20:15 am: establishing database connection
+05/07/2018 04:20:15 am: doc search complete
+05/07/2018 04:20:23 am: receiving rabbit message
+05/07/2018 04:20:23 am: establishing database connection
+05/07/2018 04:20:23 am: responding and closing function 
+
+
+05/07/2018 04:20:24 am: receiving rabbit message
+05/07/2018 04:20:24 am: establishing database connection
+05/07/2018 04:20:24 am: Incorrect doctor search type
+
+05/07/2018 04:22:05 am: receiving rabbit message
+05/07/2018 04:22:05 am: establishing database connection
+05/07/2018 04:22:47 am: receiving rabbit message
+05/07/2018 04:22:47 am: establishing database connection
+05/07/2018 04:22:47 am:  Login attempt for user: 777 
+05/07/2018 04:22:48 am: receiving rabbit message
+05/07/2018 04:22:48 am: establishing database connection
+05/07/2018 04:22:56 am: receiving rabbit message
+05/07/2018 04:22:56 am: establishing database connection
+05/07/2018 04:22:56 am: doc search complete
+05/07/2018 04:23:19 am: receiving rabbit message
+05/07/2018 04:23:19 am: establishing database connection
+05/07/2018 04:23:19 am: 
+Update doc failed.You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE username='777'' at line 1 
+05/07/2018 04:23:19 am: responding and closing function 
+
+
+05/07/2018 04:23:20 am: receiving rabbit message
+05/07/2018 04:23:20 am: establishing database connection
+05/07/2018 04:23:20 am: Incorrect doctor search type
+
+05/07/2018 04:25:06 am: receiving rabbit message
+05/07/2018 04:25:06 am: establishing database connection
+05/07/2018 04:25:06 am: doc search complete
+05/07/2018 04:25:41 am: receiving rabbit message
+05/07/2018 04:25:41 am: establishing database connection
+05/07/2018 04:25:52 am: receiving rabbit message
+05/07/2018 04:25:52 am: establishing database connection
+05/07/2018 04:25:52 am:  Login attempt for user: rick 
+05/07/2018 04:25:52 am: receiving rabbit message
+05/07/2018 04:25:52 am: establishing database connection
+05/07/2018 04:26:14 am: receiving rabbit message
+05/07/2018 04:26:14 am: establishing database connection
+05/07/2018 04:26:14 am: doc search complete
+05/07/2018 04:26:23 am: receiving rabbit message
+05/07/2018 04:26:23 am: establishing database connection
+05/07/2018 04:26:23 am: responding and closing function 
+
+
+05/07/2018 04:26:24 am: receiving rabbit message
+05/07/2018 04:26:24 am: establishing database connection
+05/07/2018 04:26:24 am: Incorrect doctor search type
+
+05/07/2018 04:27:08 am: receiving rabbit message
+05/07/2018 04:27:08 am: establishing database connection
+05/07/2018 04:27:08 am: responding and closing function 
+
+
+05/07/2018 04:29:04 am: receiving rabbit message
+05/07/2018 04:29:04 am: establishing database connection
+05/07/2018 04:29:04 am:  Login attempt for user: 777 
+05/07/2018 04:29:04 am: receiving rabbit message
+05/07/2018 04:29:04 am: establishing database connection
+05/07/2018 04:30:21 am: receiving rabbit message
+05/07/2018 04:30:21 am: establishing database connection
+05/07/2018 04:30:21 am: doc search complete
+05/07/2018 04:30:32 am: receiving rabbit message
+05/07/2018 04:30:32 am: establishing database connection
+05/07/2018 04:30:32 am: 
+Update doc failed.You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE username='777'' at line 1 
+05/07/2018 04:30:33 am: receiving rabbit message
+05/07/2018 04:30:33 am: establishing database connection
+05/07/2018 04:30:33 am: Incorrect doctor search type
+
+05/07/2018 04:30:43 am: receiving rabbit message
+05/07/2018 04:30:43 am: establishing database connection
+05/07/2018 04:30:43 am: doc search complete
+05/07/2018 04:32:53 am: receiving rabbit message
+05/07/2018 04:32:53 am: establishing database connection
+05/07/2018 04:32:53 am:  Login attempt for user: 1 
+05/07/2018 04:32:53 am: receiving rabbit message
+05/07/2018 04:32:53 am: establishing database connection
+05/07/2018 04:32:59 am: receiving rabbit message
+05/07/2018 04:32:59 am: establishing database connection
+05/07/2018 04:32:59 am: doc search complete
+05/07/2018 04:33:10 am: receiving rabbit message
+05/07/2018 04:33:10 am: establishing database connection
+05/07/2018 04:33:12 am: receiving rabbit message
+05/07/2018 04:33:12 am: establishing database connection
+05/07/2018 04:39:48 am: receiving rabbit message
+05/07/2018 04:39:48 am: establishing database connection
+05/07/2018 04:39:48 am:  Doctor registration failed step2 <br>Data too long for column 'location' at row 1
+05/07/2018 04:42:55 am: receiving rabbit message
+05/07/2018 04:42:55 am: establishing database connection
+05/07/2018 04:43:11 am: receiving rabbit message
+05/07/2018 04:43:11 am: establishing database connection
+05/07/2018 04:43:11 am:  Login attempt for user: morty 
+05/07/2018 04:43:11 am: receiving rabbit message
+05/07/2018 04:43:11 am: establishing database connection
+05/07/2018 08:51:28 pm: receiving rabbit message
+05/07/2018 08:51:28 pm: establishing database connection
+05/07/2018 08:51:28 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:51:28 pm:  Login attempt for user: rich 
+05/07/2018 08:51:28 pm:  login failure: 
+05/07/2018 08:51:46 pm: receiving rabbit message
+05/07/2018 08:51:46 pm: establishing database connection
+05/07/2018 08:51:46 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:51:46 pm:  Login attempt for user: rich 
+05/07/2018 08:51:46 pm:  login failure: 
+05/07/2018 08:52:07 pm: receiving rabbit message
+05/07/2018 08:52:07 pm: establishing database connection
+05/07/2018 08:52:07 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:52:07 pm:  Login attempt for user: MrLoliCon 
+05/07/2018 08:52:07 pm:  login failure: 
+05/07/2018 08:53:28 pm: receiving rabbit message
+05/07/2018 08:53:28 pm: establishing database connection
+05/07/2018 08:53:28 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:53:28 pm:  Login attempt for user: rich 
+05/07/2018 08:53:28 pm:  login failure: 
+05/07/2018 08:54:37 pm: receiving rabbit message
+05/07/2018 08:54:37 pm: establishing database connection
+05/07/2018 08:54:37 pm: Error: mysqli connection failed: Host '192.168.1.175' is not allowed to connect to this MySQL server
+05/07/2018 08:54:37 pm:  Login attempt for user: rich 
+05/07/2018 08:54:37 pm:  login failure: 
+05/07/2018 08:57:14 pm: receiving rabbit message
+05/07/2018 08:57:14 pm: establishing database connection
+05/07/2018 08:57:14 pm: Error: mysqli connection failed: Host '192.168.1.175' is not allowed to connect to this MySQL server
+05/07/2018 08:57:14 pm:  Login attempt for user: rich 
+05/07/2018 08:57:14 pm:  login failure: 
+05/07/2018 08:57:46 pm: receiving rabbit message
+05/07/2018 08:57:46 pm: establishing database connection
+05/07/2018 08:57:46 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:57:46 pm:  Login attempt for user: rich 
+05/07/2018 08:57:46 pm:  login failure: 
+05/07/2018 08:57:56 pm: receiving rabbit message
+05/07/2018 08:57:56 pm: establishing database connection
+05/07/2018 08:57:56 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:57:56 pm:  Login attempt for user: 777 
+05/07/2018 08:57:56 pm:  login failure: 
+05/07/2018 08:58:29 pm: receiving rabbit message
+05/07/2018 08:58:29 pm: establishing database connection
+05/07/2018 08:58:29 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 08:58:29 pm:  Login attempt for user: 777 
+05/07/2018 08:58:29 pm:  login failure: 
+05/07/2018 09:04:46 pm: receiving rabbit message
+05/07/2018 09:04:47 pm: establishing database connection
+05/07/2018 09:04:47 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:04:47 pm:  Login attempt for user: 777 
+05/07/2018 09:04:47 pm:  login failure: 
+05/07/2018 09:06:21 pm: receiving rabbit message
+05/07/2018 09:06:21 pm: establishing database connection
+05/07/2018 09:06:21 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:06:21 pm:  Login attempt for user: 777 
+05/07/2018 09:06:21 pm:  login failure: 
+05/07/2018 09:14:52 pm: receiving rabbit message
+05/07/2018 09:14:52 pm: establishing database connection
+05/07/2018 09:14:52 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:14:52 pm:  Login attempt for user: 777 
+05/07/2018 09:14:52 pm:  login failure: 
+05/07/2018 09:23:52 pm: receiving rabbit message
+05/07/2018 09:23:52 pm: establishing database connection
+05/07/2018 09:23:52 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:23:52 pm:  Login attempt for user: 777 
+05/07/2018 09:23:52 pm:  login failure: 
+05/07/2018 09:26:27 pm: receiving rabbit message
+05/07/2018 09:26:27 pm: establishing database connection
+05/07/2018 09:26:27 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:26:27 pm:  Login attempt for user: 777 
+05/07/2018 09:26:27 pm:  login failure: 
+05/07/2018 09:26:37 pm: receiving rabbit message
+05/07/2018 09:26:37 pm: establishing database connection
+05/07/2018 09:26:37 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:26:37 pm:  Login attempt for user: 777 
+05/07/2018 09:26:37 pm:  login failure: 
+05/07/2018 09:38:10 pm: receiving rabbit message
+05/07/2018 09:38:10 pm: establishing database connection
+05/07/2018 09:38:10 pm: Error: mysqli connection failed: Connection refused
+05/07/2018 09:38:10 pm:  Login attempt for user: 777 
+05/07/2018 09:38:10 pm:  login failure: 
+05/07/2018 09:40:02 pm: receiving rabbit message
+05/07/2018 09:40:02 pm: establishing database connection
+05/07/2018 09:40:02 pm:  Login attempt for user: 777 
+05/07/2018 09:40:02 pm: receiving rabbit message
+05/07/2018 09:40:02 pm: establishing database connection
+05/07/2018 09:40:37 pm: receiving rabbit message
+05/07/2018 09:40:37 pm: establishing database connection
+05/07/2018 09:40:37 pm:  Login attempt for user: rich 
+05/07/2018 09:40:37 pm: receiving rabbit message
+05/07/2018 09:40:37 pm: establishing database connection
+05/07/2018 09:40:42 pm: receiving rabbit message
+05/07/2018 09:40:42 pm: establishing database connection
+05/07/2018 09:40:49 pm: receiving rabbit message
+05/07/2018 09:40:49 pm: establishing database connection
+05/07/2018 09:50:36 pm: receiving rabbit message
+05/07/2018 09:50:36 pm: establishing database connection
+05/07/2018 09:50:52 pm: receiving rabbit message
+05/07/2018 09:50:52 pm: establishing database connection
+05/07/2018 09:50:52 pm:  Login attempt for user: aba 
+05/07/2018 09:50:52 pm: receiving rabbit message
+05/07/2018 09:50:52 pm: establishing database connection
+05/07/2018 09:50:57 pm: receiving rabbit message
+05/07/2018 09:50:57 pm: establishing database connection
+05/07/2018 09:50:57 pm: responding and closing function 
+
+
+05/07/2018 09:51:00 pm: receiving rabbit message
+05/07/2018 09:51:00 pm: establishing database connection
+05/07/2018 09:52:25 pm: receiving rabbit message
+05/07/2018 09:52:25 pm: establishing database connection
+05/07/2018 09:52:47 pm: receiving rabbit message
+05/07/2018 09:52:47 pm: establishing database connection
+05/07/2018 09:52:47 pm:  Login attempt for user: bab 
+05/07/2018 09:52:47 pm: receiving rabbit message
+05/07/2018 09:52:47 pm: establishing database connection
+05/07/2018 09:53:05 pm: receiving rabbit message
+05/07/2018 09:53:05 pm: establishing database connection
+05/07/2018 09:53:05 pm: doc search complete
+05/07/2018 09:53:05 pm: responding and closing function 
+
+
+05/07/2018 09:53:18 pm: receiving rabbit message
+05/07/2018 09:53:18 pm: establishing database connection
+05/07/2018 09:53:18 pm: doc search complete
+05/07/2018 09:53:26 pm: receiving rabbit message
+05/07/2018 09:53:26 pm: establishing database connection
+05/07/2018 09:53:27 pm: receiving rabbit message
+05/07/2018 09:53:27 pm: establishing database connection
+05/07/2018 09:53:38 pm: receiving rabbit message
+05/07/2018 09:53:38 pm: establishing database connection
+05/07/2018 09:53:38 pm: Rate doc: get doc info: was successful
+05/07/2018 09:53:38 pm: Rate doc: updating ratings was successful
+05/07/2018 09:53:38 pm: Get sum  was successful
+05/07/2018 09:53:38 pm: get count was successful
+05/07/2018 09:53:38 pm: new rating was successful
+05/07/2018 09:53:38 pm: responding and closing function 
+
+
+05/07/2018 09:53:38 pm: receiving rabbit message
+05/07/2018 09:53:38 pm: establishing database connection
+05/07/2018 09:54:24 pm: receiving rabbit message
+05/07/2018 09:54:24 pm: establishing database connection
+05/07/2018 09:54:24 pm: doc search complete
+05/07/2018 09:54:27 pm: receiving rabbit message
+05/07/2018 09:54:27 pm: establishing database connection
+05/07/2018 09:54:38 pm: receiving rabbit message
+05/07/2018 09:54:38 pm: establishing database connection
+05/07/2018 09:54:38 pm: Error: UPDATE Doctors SET review=CONCAT(review, 'She's aight') WHERE license=789456;<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'aight') WHERE license=789456' at line 1
+
+05/07/2018 09:54:38 pm: responding and closing function 
+
+
+05/07/2018 09:54:38 pm: receiving rabbit message
+05/07/2018 09:54:38 pm: establishing database connection
+05/07/2018 09:54:45 pm: receiving rabbit message
+05/07/2018 09:54:45 pm: establishing database connection
+05/07/2018 09:54:45 pm: doc search complete
+05/07/2018 10:00:24 pm: receiving rabbit message
+05/07/2018 10:00:24 pm: establishing database connection
+05/07/2018 10:00:24 pm:  Login attempt for user: aba 
+05/07/2018 10:00:24 pm: receiving rabbit message
+05/07/2018 10:00:24 pm: establishing database connection
+05/07/2018 10:00:35 pm: receiving rabbit message
+05/07/2018 10:00:35 pm: establishing database connection
+05/07/2018 10:00:35 pm:  Login attempt for user: bab 
+05/07/2018 10:00:36 pm: receiving rabbit message
+05/07/2018 10:00:36 pm: establishing database connection
+05/07/2018 10:00:41 pm: receiving rabbit message
+05/07/2018 10:00:41 pm: establishing database connection
+05/07/2018 10:00:41 pm: Error: UPDATE Doctors SET review='CONCAT(review, 'she's aight')' WHERE license=789456;<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'she's aight')' WHERE license=789456' at line 1
+
+05/07/2018 10:00:41 pm: responding and closing function 
+
+
+05/07/2018 10:00:41 pm: receiving rabbit message
+05/07/2018 10:00:41 pm: establishing database connection
+05/07/2018 10:00:53 pm: receiving rabbit message
+05/07/2018 10:00:53 pm: establishing database connection
+05/07/2018 10:00:53 pm: doc search complete
+05/07/2018 10:03:59 pm: receiving rabbit message
+05/07/2018 10:03:59 pm: establishing database connection
+05/07/2018 10:04:08 pm: receiving rabbit message
+05/07/2018 10:04:08 pm: establishing database connection
+05/07/2018 10:04:08 pm: Error: UPDATE Doctors SET review='CONCAT(review, 'jhhghkgkgk')' WHERE license=789456;<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'jhhghkgkgk')' WHERE license=789456' at line 1
+
+05/07/2018 10:04:08 pm: responding and closing function 
+
+
+05/07/2018 10:04:08 pm: receiving rabbit message
+05/07/2018 10:04:08 pm: establishing database connection
+05/07/2018 10:09:34 pm: receiving rabbit message
+05/07/2018 10:09:34 pm: establishing database connection
+05/07/2018 10:09:34 pm:  Login attempt for user: 1 
+05/07/2018 10:09:34 pm: receiving rabbit message
+05/07/2018 10:09:34 pm: establishing database connection
+05/07/2018 10:12:06 pm: receiving rabbit message
+05/07/2018 10:12:06 pm: establishing database connection
+05/07/2018 10:12:06 pm:  Login attempt for user: rich 
+05/07/2018 10:12:06 pm: receiving rabbit message
+05/07/2018 10:12:06 pm: establishing database connection
+05/07/2018 10:13:37 pm: receiving rabbit message
+05/07/2018 10:13:37 pm: establishing database connection
+05/07/2018 10:14:25 pm: receiving rabbit message
+05/07/2018 10:14:25 pm: establishing database connection
+05/07/2018 10:14:36 pm: receiving rabbit message
+05/07/2018 10:14:36 pm: establishing database connection
+05/07/2018 10:14:36 pm:  Login attempt for user: ahah 
+05/07/2018 10:14:36 pm: receiving rabbit message
+05/07/2018 10:14:36 pm: establishing database connection
+05/07/2018 10:14:48 pm: receiving rabbit message
+05/07/2018 10:14:48 pm: establishing database connection
+05/07/2018 10:14:48 pm: doc search complete
+05/07/2018 10:14:57 pm: receiving rabbit message
+05/07/2018 10:14:57 pm: establishing database connection
+05/07/2018 10:14:57 pm: doc search complete
+05/07/2018 10:15:11 pm: receiving rabbit message
+05/07/2018 10:15:11 pm: establishing database connection
+05/07/2018 10:15:12 pm: receiving rabbit message
+05/07/2018 10:15:12 pm: establishing database connection
+05/07/2018 10:15:42 pm: receiving rabbit message
+05/07/2018 10:15:42 pm: establishing database connection
+05/07/2018 10:15:42 pm: Rate doc: get doc info: was successful
+05/07/2018 10:15:42 pm: Rate doc: updating ratings was successful
+05/07/2018 10:15:42 pm: Get sum  was successful
+05/07/2018 10:15:42 pm: get count was successful
+05/07/2018 10:15:42 pm: new rating was successful
+05/07/2018 10:15:42 pm: responding and closing function 
+
+
+05/07/2018 10:15:42 pm: receiving rabbit message
+05/07/2018 10:15:42 pm: establishing database connection
+05/07/2018 10:15:51 pm: receiving rabbit message
+05/07/2018 10:15:51 pm: establishing database connection
+05/07/2018 10:15:51 pm: doc search complete
+05/07/2018 10:15:57 pm: receiving rabbit message
+05/07/2018 10:15:57 pm: establishing database connection
+05/07/2018 10:16:16 pm: receiving rabbit message
+05/07/2018 10:16:16 pm: establishing database connection
+05/07/2018 10:16:16 pm:  Login attempt for user: haha 
+05/07/2018 10:16:24 pm: receiving rabbit message
+05/07/2018 10:16:24 pm: establishing database connection
+05/07/2018 10:16:24 pm:  Login attempt for user: rich 
+05/07/2018 10:16:24 pm: receiving rabbit message
+05/07/2018 10:16:24 pm: establishing database connection
+05/07/2018 10:16:30 pm: receiving rabbit message
+05/07/2018 10:16:30 pm: establishing database connection
+05/07/2018 10:16:42 pm: receiving rabbit message
+05/07/2018 10:16:42 pm: establishing database connection
+05/07/2018 10:16:58 pm: receiving rabbit message
+05/07/2018 10:16:58 pm: establishing database connection
+05/07/2018 10:16:59 pm: receiving rabbit message
+05/07/2018 10:16:59 pm: establishing database connection
+05/07/2018 10:44:57 pm: receiving rabbit message
+05/07/2018 10:44:57 pm: establishing database connection
+05/07/2018 10:44:57 pm: receiving rabbit message
+05/07/2018 10:44:57 pm: establishing database connection
+05/07/2018 10:45:01 pm: receiving rabbit message
+05/07/2018 10:45:01 pm: establishing database connection
+05/07/2018 10:49:07 pm: receiving rabbit message
+05/07/2018 10:49:07 pm: establishing database connection
+05/07/2018 10:51:46 pm: receiving rabbit message
+05/07/2018 10:51:46 pm: establishing database connection
+05/07/2018 10:54:31 pm: receiving rabbit message
+05/07/2018 10:54:31 pm: establishing database connection
+05/07/2018 10:54:31 pm: receiving rabbit message
+05/07/2018 10:54:31 pm: establishing database connection
+05/07/2018 10:54:33 pm: receiving rabbit message
+05/07/2018 10:54:33 pm: establishing database connection
+05/07/2018 10:54:38 pm: receiving rabbit message
+05/07/2018 10:54:38 pm: establishing database connection
+05/07/2018 10:58:43 pm: receiving rabbit message
+05/07/2018 10:58:43 pm: establishing database connection
+05/08/2018 12:26:44 am: receiving rabbit message
+05/08/2018 12:26:44 am: establishing database connection
+05/08/2018 12:26:44 am:  Login attempt for user: MrLoliCon 
+05/08/2018 12:26:44 am: receiving rabbit message
+05/08/2018 12:26:44 am: establishing database connection
+05/08/2018 12:26:44 am:  Login attempt for user: MrLoliCon 
+05/08/2018 12:28:15 am: receiving rabbit message
+05/08/2018 12:28:15 am: establishing database connection
+05/08/2018 12:28:15 am:  Login attempt for user: MrLoliCon 
+05/08/2018 12:28:31 am: receiving rabbit message
+05/08/2018 12:28:31 am: establishing database connection
+05/08/2018 12:28:31 am:  Login attempt for user: MrLoliCon 
+05/08/2018 12:28:44 am: receiving rabbit message
+05/08/2018 12:28:44 am: establishing database connection
+05/08/2018 12:28:44 am:  Login attempt for user: 1 
+05/08/2018 12:28:44 am: receiving rabbit message
+05/08/2018 12:28:44 am: establishing database connection
+05/08/2018 12:29:01 am: receiving rabbit message
+05/08/2018 12:29:01 am: establishing database connection
+05/08/2018 12:29:01 am:  Login attempt for user: MrLolicon 
+05/08/2018 12:29:08 am: receiving rabbit message
+05/08/2018 12:29:08 am: establishing database connection
+05/08/2018 12:29:08 am:  Login attempt for user: rich 
+05/08/2018 12:29:08 am: receiving rabbit message
+05/08/2018 12:29:08 am: establishing database connection
+05/08/2018 12:30:15 am: receiving rabbit message
+05/08/2018 12:30:15 am: establishing database connection
+05/08/2018 12:30:43 am: receiving rabbit message
+05/08/2018 12:30:43 am: establishing database connection
+05/08/2018 12:31:15 am: receiving rabbit message
+05/08/2018 12:31:15 am: establishing database connection
+05/08/2018 12:31:15 am:  Login attempt for user: 777 
+05/08/2018 12:31:15 am: receiving rabbit message
+05/08/2018 12:31:15 am: establishing database connection
+05/08/2018 12:31:45 am: receiving rabbit message
+05/08/2018 12:31:45 am: establishing database connection
+05/08/2018 12:31:45 am:  Login attempt for user: hayzeus 
+05/08/2018 12:32:09 am: receiving rabbit message
+05/08/2018 12:32:09 am: establishing database connection
+05/08/2018 12:32:09 am:  Login attempt for user: heyzeus 
+05/08/2018 12:36:52 am: receiving rabbit message
+05/08/2018 12:36:52 am: establishing database connection
+05/08/2018 12:36:52 am:  Login attempt for user: 1 
+05/08/2018 12:36:52 am: receiving rabbit message
+05/08/2018 12:36:52 am: establishing database connection
+05/08/2018 12:37:04 am: receiving rabbit message
+05/08/2018 12:37:04 am: establishing database connection
+05/08/2018 12:37:04 am: Rate doc: get doc info: was successful
+05/08/2018 12:37:04 am: Rate doc: updating ratings was successful
+05/08/2018 12:37:04 am: Get sum  was successful
+05/08/2018 12:37:04 am: get count was successful
+05/08/2018 12:37:04 am: new rating was successful
+05/08/2018 12:37:04 am: responding and closing function 
+
+
+05/08/2018 12:37:04 am: receiving rabbit message
+05/08/2018 12:37:04 am: establishing database connection
+05/08/2018 12:37:13 am: receiving rabbit message
+05/08/2018 12:37:13 am: establishing database connection
+05/08/2018 12:37:13 am: doc search complete
+05/10/2018 12:46:08 pm: error connecting to db
+05/10/2018 12:46:14 pm: error connecting to db
+05/10/2018 12:47:36 pm: error connecting to db
+05/10/2018 12:47:40 pm: error connecting to db
+05/10/2018 12:47:42 pm: error connecting to db
+05/10/2018 12:47:44 pm: error connecting to db
+05/10/2018 12:47:49 pm: error connecting to db
+05/10/2018 12:47:51 pm: error connecting to db
+05/10/2018 12:47:53 pm: error connecting to db
+05/10/2018 12:47:54 pm: error connecting to db
+05/10/2018 12:47:55 pm: error connecting to db
+05/10/2018 12:53:46 pm: receiving rabbit message
+05/10/2018 12:53:46 pm: establishing database connection
+05/10/2018 12:53:46 pm: responding and closing function 
+
+
+05/10/2018 12:53:46 pm: receiving rabbit message
+05/10/2018 12:53:46 pm: establishing database connection
+05/10/2018 12:53:46 pm: responding and closing function 
+
+
+05/10/2018 12:54:40 pm: receiving rabbit message
+05/10/2018 12:54:40 pm: establishing database connection
+05/10/2018 12:54:40 pm: responding and closing function 
+
+
+05/10/2018 01:05:34 pm: receiving rabbit message
+05/10/2018 01:05:34 pm: establishing database connection
+05/10/2018 01:05:34 pm: responding and closing function 
+
+
+05/10/2018 01:18:19 pm: error connecting to db
+05/10/2018 01:18:50 pm: error connecting to db
+05/10/2018 01:18:55 pm: error connecting to db
+05/10/2018 01:18:59 pm: error connecting to db
+05/10/2018 01:19:06 pm: error connecting to db
+05/10/2018 01:22:34 pm: error connecting to db
+05/10/2018 01:23:52 pm: version select sql error
+05/10/2018 01:27:50 pm: version select sql error
+05/10/2018 01:29:08 pm: version select sql error
+05/10/2018 01:29:17 pm: version select sql error
+05/10/2018 01:31:01 pm: version select sql error
+05/10/2018 01:35:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:45 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:46 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:47 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:48 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:49 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:50 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:51 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:52 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:38:53 pm: version select sql error
+05/10/2018 01:55:27 pm: version select sql error
+05/10/2018 01:57:34 pm: version select sql error
+05/10/2018 02:00:43 pm: version select sql error
+05/10/2018 02:05:42 pm: version select sql error
+05/10/2018 02:13:25 pm: version select sql error
+05/10/2018 02:14:50 pm: version select sql error
+05/10/2018 02:23:07 pm: receiving rabbit message
+05/10/2018 02:23:07 pm: establishing database connection
+05/10/2018 02:23:07 pm:  Login attempt for user: 1 
+05/10/2018 02:23:07 pm: receiving rabbit message
+05/10/2018 02:23:07 pm: establishing database connection
+05/10/2018 02:23:26 pm: receiving rabbit message
+05/10/2018 02:23:26 pm: establishing database connection
+05/10/2018 02:23:26 pm:  Login attempt for user: 1 
+05/10/2018 02:23:26 pm: receiving rabbit message
+05/10/2018 02:23:26 pm: establishing database connection
+05/10/2018 02:23:37 pm: receiving rabbit message
+05/10/2018 02:23:37 pm: establishing database connection
+05/10/2018 02:23:38 pm: responding and closing function 
+
+
+05/10/2018 02:23:38 pm: receiving rabbit message
+05/10/2018 02:23:38 pm: establishing database connection
+05/10/2018 02:23:54 pm: receiving rabbit message
+05/10/2018 02:23:54 pm: establishing database connection
+05/10/2018 02:23:54 pm: doc search complete
+05/10/2018 02:24:11 pm: receiving rabbit message
+05/10/2018 02:24:11 pm: establishing database connection
+05/10/2018 02:24:41 pm: receiving rabbit message
+05/10/2018 02:24:41 pm: establishing database connection
+05/10/2018 02:24:41 pm: responding and closing function 
+
+
+05/10/2018 02:24:41 pm: receiving rabbit message
+05/10/2018 02:24:41 pm: establishing database connection
+05/10/2018 02:24:47 pm: receiving rabbit message
+05/10/2018 02:24:47 pm: establishing database connection
+05/10/2018 02:24:47 pm: doc search complete

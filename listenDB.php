@@ -3,41 +3,40 @@
 	require_once('get_host_info.inc');
 	require_once('rabbitMQLib.inc');
 	require_once('listenerFunctions.php'); //functions used to get results from the database	
-	
-		
-	function dbRequest($response)
-	{	
-		extract(parse_ini_file('dbVar.ini')); //creates variables from an array created from an .ini file		
-		
-		$testCon=mysqli_connect("$dbAddr", "$dbUser","$dbPass","$db"); //mysqli connection to db
+	require_once('dbVar.ini');
 
-		/*foreach ($response as $res) {
-			$res=mysqli_real_escape_string($testCon,$res);
-		}*/
-		
-	
+	//$testCon=mysqli_connect("$lVar['dbAddr']","$lVar['dbUser']","$lVar[''dbPass]","$lVar['db']");	
+	function dbRequest($response,$con)
+	{
+		$lVar=parse_ini_file("dbVar.ini");	
+		$addr=$lVar['dbAddr'];
+		$dbUser=$lVar['dbUser'];	
+		$testCon=mysqli_connect("$lVar['dbAddr']","$lVar['dbUser']","$lVar['dbPass']","$lVar['db']")
+		//assign variables from forms to usable php variables
 		echo "vardump #1 ahoy \n";
 		var_dump($response);
 		echo "\n";
-		writelog("receiving rabbit message");
+		logger("receiving rabbit message");
 		$Function = $response['function'];	 
 		
-		writelog("establishing database connection");
-		$testCon=mysqli_connect($dbAddr, $dbUser,$dbPass,$db); //create a connection to the database. in the real version
+		$dbResults=array();
+		
+		logger("establishing database connection");
+		$testCon=mysqli_connect("127.0.0.1", "root","toor","it490"); //create a connection to the database. in the real version
 		//there'd be some beefing up of the security. The variables are in another file just in case this one is accessed.
 		
-		$err=mysqli_connect_error(); //function returns error id value from last connection
-		if (isset($err)) //if there's an error
+		$err=mysqli_connect_errno(); //function returns error id value from last connection
+		if ($err) //if there's an error
 		{
-			$conErr=mysqli_connect_error(); //assign the error message
-			$errMsg="Error: mysqli connection failed: ". $conErr ;
-			writelog($errMsg);
+			$conErr=mysqli_connect_error($testCon); //assign the error message
+			printf("Connection failed %s\n", $err , $con); //print error id and message
+			logger($conErr);
 		}
 		
 		switch ($Function) 
 		{ //Ben, I'm writing the cases as their Function names; I'll rewrite this after I get it to you
 		
-			case "login":
+			case "dLogin":
 				$user=$response["username"];
 				$pass=$response["password"];
 				echo "\n hi hi";
@@ -45,7 +44,7 @@
 				echo "test after login\n";
 				break;
 
-			case "pLogin":
+			case "login":
 				$user=$response["username"];
 				$pass=$response["password"];
 				echo $user . " " . $pass . "\n";
@@ -73,8 +72,7 @@
 				$email=$response['email'];
 				$phone=$response['telNo'];
 				$location=$response['address'];
-				$dbResults=addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $email, $phone, $location, $testCon);	
-				return $dbResults;
+				addDoctor($user, $pass, $license, $firstName, $lastName, $gender, $specialization, $email, $phone, $location, $testCon);	
 				break;
 
 			case "pRegister":
@@ -101,9 +99,6 @@
 			case "viewRecords": //don't think it needs a rewrite but will check
 				viewRecords($firstName, $lastName, $user, $testCon);
 				break;
-		
-			case "updateRecord":
-					
 
 			case "viewDoc":
 				viewDoc($firstName, $lastName, $testCon);
@@ -120,67 +115,26 @@
 				$dbResults=viewPatInfo($user,$testCon);
 				break;
 			
-			case "rateDoc":
+			case "docRate":
 				$user=$response['username'];
-				$rating=$response['rating'];
-				rateDoctor($user,$rating,$testCon);
-				break;
-			
-			case "docNote":
-				$email=$response['email'];
-				$note=$response['note'];
-				$username=$response['userID'];
-				$dbResults=addNote($email, $username,$note,$testCon);	
-				break;
-	
-			case "myPatients":
-				$user=$response['username'];
-				$license=$response['license'];
-				$dbResults=patientList($user,$license,$testCon);
-				break;
-			
-			case "setDoc":
-				$user=$response['username'];
-				$email=$response['email'];
-				$dbResults=setDoc($user,$email,$testCon);
+				return true;
 				break;
 	
 			case "error":
 				$err=$response['log'];
 				$ferr= "error:" . $err;
-				writelog($err);
+				logger($err);
 				break;
 
-			case "docViewPat":
-				$email=$response['email'];
-				$dbResults=docViewPat($email,$testCon);
-				break;
-	
-			case "logtest":
-				writelog('test');	
-				$s=var_dump($response);
-				writelog($s);
-				break;
-
-			case "functest":
-				$q="select * from patientRecords LIMIT 1";
-				$query=mysqli_query($testCon,$q);
-				$a="checking checkQ";
-				checkQ($query, $a, $testCon);
-				var_dump(mysqli_fetch_assoc($query));
-				break;
 		}
-		
-		if(isset($dbResults))
-		return $dbResults;
-		writelog("responding and closing function \n\n");
-		if (($Function!='error') AND isset($dbResults) )
+		var_dump($dbResults);
+		logger("responding and closing function \n\n");
+		if (($Function!='error') )
 			return $dbResults;
 	}
 			
 	$server = new rabbitMQServer("testRabbitMQ.ini", "Login_T_DB");
 	$server->process_requests('dbRequest');
-	
-	
+
 
 ?>

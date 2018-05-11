@@ -2,18 +2,18 @@
 
 	require_once('rabbitMQLib.inc');
 	
-	$user = $argv[1];
-	$pass = $argv[2];
-	$func = $argv[3];
+//	$user = $argv[1];
+//	$pass = $argv[2];
+//	$func = $argv[3];
 
 	$client = new rabbitMQClient('testRabbitMQ.ini','testServer');
 	
-	$msg = array('username' => $user, 'password' => $pass, 'function' => $func);
-	$client -> send_request($msg);	
+	$tmsg = array('userID' => 'haha', 'password' => 'test','email' => 'ahah@njit.edu','note'=> 'tittiesandbeer', 'function' => 'docNote');
+	$client -> send_request($tmsg);	
 
-	function yesOrNo($msg)
+	function yesOrNo($tmsg)
 	{
-		var_dump($msg);
+		var_dump($tmsg);
 	}
 
 	$server = new rabbitMQServer('testRabbitMQ.ini','testServer');
